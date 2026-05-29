@@ -157,6 +157,21 @@ Write to `~/.claude/plugins/config/eu-legal/CLAUDE.md` (create parent dirs: `mkd
 
 Show a brief summary of what was written (company name, entity type, Velvoite status, active practice areas).
 
+---
+
+## Practice-area configs (optional deeper setup)
+
+The base profile captures entity type, jurisdiction, and regulatory posture. For each practice area, a separate config file enables more detailed, practice-specific behaviour:
+
+| Practice area | Config path | How to populate |
+|---|---|---|
+| Privacy / GDPR + AI Act | `~/.claude/plugins/config/eu-legal/privacy.md` | `/eu-legal:privacy-cold-start` (Plan 2) |
+| Commercial contracts | `~/.claude/plugins/config/eu-legal/commercial.md` | `/eu-legal:commercial-cold-start` (Plan 3) |
+| Employment | `~/.claude/plugins/config/eu-legal/employment.md` | `/eu-legal:employment-cold-start` (Plan 4) |
+| Corporate governance | `~/.claude/plugins/config/eu-legal/corporate.md` | `/eu-legal:corporate-cold-start` (Plan 5) |
+
+Skills work without these files — they fall back to base profile. The practice-area configs unlock detailed behaviour: DPA playbook positions, contract standard terms, works council thresholds, board structure, Finnish KHO case law notes.
+
 Then offer:
 > "Setup complete. Try:
 > - `/eu-legal:obligations` — what regulatory obligations apply to you
