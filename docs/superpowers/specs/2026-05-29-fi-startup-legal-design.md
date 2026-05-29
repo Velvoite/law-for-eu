@@ -197,12 +197,18 @@ Add `finlex-mcp` and `prh-mcp` to eu-legal's `.mcp.json`. Update these existing 
 
 ---
 
-## Open questions for legal review (Heidi)
+## Statute lookups (resolved via Finlex MCP after Phase 1)
 
-1. **§66 vs §66a decision logic** — does the 2026 TVL reform (options taxed at sale) apply to all Annex-III-type unlisted companies, or only startups meeting specific criteria? The `esop-designer` skill needs to get this exactly right.
-2. **BF grant clawback trigger** — does a VC investment that brings a foreign LP to >50% indirect ownership trigger the EEA control transfer restriction, or only direct control changes?
-3. **OYL §9:14 and drag-along** — is drag-along valid in Finnish law without explicit yhtiöjärjestys provision, or does it require a specific share class structure?
-4. **Non-compete compensation threshold** — TSL §3:5 requires compensation for restrictions >6 months. What is the current correct threshold (50% or 100% of salary) after recent case law?
+These are not open questions — they are statutory lookups. Once `finlex-mcp` is running, the relevant skills call Finlex directly for authoritative current text rather than relying on training data.
+
+| Question | Finlex call | Skill that uses it |
+|---|---|---|
+| TVL §66 2026 reform exact criteria (options taxed at sale — which companies qualify?) | `get_statute("TVL", "66")` + `get_statute("TVL", "66a")` | `esop-designer` |
+| TSL §3:5 non-compete compensation threshold (50% or 100% after recent case law?) | `get_statute("TSL", "3:5")` | `non-compete-check`, `founder-agreement` |
+| OYL §9:14 drag-along validity without yhtiöjärjestys provision | `get_statute("OYL", "9:14")` | `sha-review` |
+| BF clawback: foreign LP indirect ownership vs direct control transfer | BF funding terms reference (static doc, fetched during `bf-grant-check` setup) | `bf-grant-check` |
+
+Build Phase 1 (finlex-mcp) first. These answers come from the live statute, not from Heidi.
 
 ---
 
