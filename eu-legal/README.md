@@ -37,6 +37,7 @@ Skills work without a Velvoite account (general EU law guidance). With one they 
 **Step 1 — Clone the repo** (if you haven't already):
 ```bash
 git clone https://github.com/Velvoite/law-for-eu
+cd law-for-eu
 ```
 
 **Step 2 — Add the marketplace** (in Claude Code or terminal):
