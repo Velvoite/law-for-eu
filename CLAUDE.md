@@ -1,5 +1,30 @@
 # CLAUDE.md
 
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
+## Fork context
+
+This is a fork of `anthropics/claude-for-legal` being adapted for EU law use cases. `upstream` remote tracks the original; `origin` is the fork (`mattipuh/law-for-eu`).
+
+## Product: eu-legal plugin
+
+The `eu-legal/` directory is the product — a standalone Claude Code plugin for EU-regulated financial institutions. Built by Silly Pilot Oy (velvoite.eu).
+
+**Publishing roadmap:**
+1. **Production repo:** `github.com/Velvoite/eu-legal` — contains only `eu-legal/` contents. Apache 2.0. When ready: log in as matti.puhakka@velvoite.eu, create the repo, push `eu-legal/` content there.
+2. **Upstream external plugin:** PR to `anthropics/claude-for-legal` adding `external_plugins/eu-legal/` + `marketplace.json` entry. Requires signing the CLA once (comment `I have read the CLA Document and I hereby sign the CLA` in the PR). CLA text is at `CLA.md` in the upstream repo.
+3. **Velvoite as connector:** Separate PR adding Velvoite MCP to `regulatory-legal/.mcp.json` and `privacy-legal/.mcp.json` in upstream — listed in CONNECTORS.md "Wanted connectors" as a desired integration.
+
+**Commercial model:** Plugin is Apache 2.0 (free). `VELVOITE_API_KEY` is the commercial product — corpus-backed features require a Velvoite account (velvoite.eu, free 30-day trial).
+
+**Dev workflow:** Build in this fork (`mattipuh/law-for-eu`). When a plan is complete, push `eu-legal/` to `Velvoite/eu-legal`.
+
+## Environment
+
+Uses [direnv](https://direnv.net/) — run `direnv allow` once. The `.envrc` routes Claude API calls through **Azure AI Foundry** (`puhakkam3-resource`) instead of the default Anthropic endpoint.
+
+---
+
 Guidance for working on this repo. `claude-for-legal` is a Claude Code plugin
 marketplace — twelve first-party legal plugins, one vendor plugin, and five
 managed-agent cookbooks. Most work here is editing prompt content (skills,
