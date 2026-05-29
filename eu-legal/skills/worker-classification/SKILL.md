@@ -66,6 +66,8 @@ Note: even if the worker is not on a "platform", courts in FI and DE may apply s
 
 ## Step 3: Apply Finnish test (TSL §1)
 
+Call `mcp__velvoite__get_finnish_statute("TSL", "1:1")` for the statutory employment relationship definition. Present the three-element test from the live statute text.
+
 **Employment relationship exists under Työsopimuslaki if ALL THREE elements are present:**
 
 | Element | Analysis |

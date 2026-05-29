@@ -44,6 +44,8 @@ Also confirm: jurisdiction (Finland / Germany / other EU) and employee details (
 
 ### Finland — Vuosilomalaki (162/2005)
 
+Call `mcp__velvoite__get_finnish_statute("VLL", "5")` for annual holiday accrual rates. Present accrual rates from the live statute text.
+
 **Accrual rate:**
 - First holiday year (April 1–March 31): 2 days per month employed
 - After 1 full holiday year of employment (before end of first March 31 in employment): 2.5 days per month

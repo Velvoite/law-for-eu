@@ -71,6 +71,8 @@ Required elements:
 
 ### Notice period calculation (TSL Ch. 6 §3)
 
+Call `mcp__velvoite__get_finnish_statute("TSL", "6:3")` and `mcp__velvoite__get_finnish_statute("TSL", "6:4")` to retrieve current notice period rules. Present the notice period table from the live statute text — do NOT use hardcoded values.
+
 **Employer-side notice periods by service length:**
 
 | Service length | Employer notice period |

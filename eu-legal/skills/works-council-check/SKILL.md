@@ -44,6 +44,8 @@ If `fi_yt_laki_applies: false` (fewer than 20 employees regularly), YT-laki does
 
 If `fi_yt_laki_applies: true`, check the decision type:
 
+Call `mcp__velvoite__get_finnish_statute("YTL", "51")` for cooperation negotiation requirements and `mcp__velvoite__get_finnish_statute("YTL", "16")` for general cooperation scope. Present thresholds from the live statute text.
+
 **Decisions requiring YT-neuvottelut (cooperation procedure):**
 
 | Decision type | YT-laki provision | Minimum negotiation period |
