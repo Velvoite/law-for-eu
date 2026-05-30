@@ -42,6 +42,8 @@ Most financial institutions are **deployers** for third-party AI (fraud detectio
 
 ## Step 2: Risk classification
 
+**Live verification:** Before classifying, call `mcp__velvoite__get_eu_regulation_article("ai_act", "6")` for Annex references and `mcp__velvoite__get_eu_regulation_article("ai_act", "5")` for prohibited practices. Fetch the returned URLs to verify the classification criteria against the current EUR-Lex text. The AI Act application dates and Annex III categories are particularly important to verify against live text.
+
 ### Prohibited (Art. 5) — hard stop
 
 These are prohibited regardless of use case. Check:
@@ -55,6 +57,8 @@ These are prohibited regardless of use case. Check:
 - AI systems that **scrape facial images from the internet or CCTV footage** to build or expand facial recognition databases (Art. 5(1)(e))
 
 If any prohibited practice applies: **STOP. This system cannot be deployed. Route to legal immediately.**
+
+**Verify prohibited practices against live text:** Call `mcp__velvoite__get_eu_regulation_article("ai_act", "5")` and fetch the section_url to confirm the current prohibited practice list. The AI Act prohibited practices have been amended — live text takes precedence.
 
 ### High-risk (Art. 6 + Annexes II and III)
 

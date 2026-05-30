@@ -26,6 +26,8 @@ A DSAR has a statutory deadline and a fixed process: verify → locate → asses
 
 ## Jurisdiction
 
+**Live verification of timelines:** Call `mcp__velvoite__get_eu_regulation_article("gdpr", "12")` and fetch the section_url to verify the response deadline (1 month, extendable to 3 months) from the live GDPR text. For erasure requests, also fetch Art. 17 via `mcp__velvoite__get_eu_regulation_article("gdpr", "17")` to verify the exemptions list.
+
 GDPR Art. 12–15 (access), Art. 17 (erasure), Art. 20 (portability), Art. 16 (rectification). Response deadline: 1 month from receipt, extendable to 3 months for complex or numerous requests (Art. 12(3)) — notify subject of extension within 1 month. Finnish implementing act: Tietosuojalaki 1050/2018. German implementing act: BDSG.
 
 ## Step 1: Classify the request

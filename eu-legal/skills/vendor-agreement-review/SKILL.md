@@ -61,6 +61,8 @@ Check `commercial.md` purchasing-side deal-breaker first. If present, flag at th
 
 ## Step 3: DORA Art. 30 ICT third-party compliance check
 
+**Live verification:** Call `mcp__velvoite__get_eu_regulation_article("dora", "30")` and fetch the returned `section_url` to read DORA Art. 30 from EUR-Lex directly. Confirm the mandatory clause list below matches the current regulation text before flagging gaps. If it differs, the live text takes precedence.
+
 **Gate:** Run this step only if:
 - Entity type in `CLAUDE.md` is a financial entity (`credit_institution`, `payment_institution`, `e_money_institution`, `investment_firm`, `aifm`, `ucits`, `insurance`, `reinsurance`)
 - AND the vendor provides ICT services (as determined in Step 1)

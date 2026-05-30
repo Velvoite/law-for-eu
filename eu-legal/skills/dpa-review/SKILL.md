@@ -23,6 +23,8 @@ DPAs come in two flavors. When a customer sends theirs, we're defending operatio
 
 ## Step 1: Mandatory GDPR Art. 28 clause check
 
+**Live verification:** Call `mcp__velvoite__get_eu_regulation_article("gdpr", "28")` and fetch the returned `section_url` to read GDPR Art. 28 from EUR-Lex directly. Verify that the mandatory clause list below matches the live text. If it differs, the live text takes precedence.
+
 Every DPA must contain (Art. 28(3)). Check each:
 
 | Clause | Required content | Present? | Adequate? |
