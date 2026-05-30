@@ -56,7 +56,7 @@ Gather information through conversation. One topic at a time.
 
 ## Step 3: Draft PIA/DPIA
 
-Structure (based on EDPB Guidelines 09/2022 on DPIA):
+Structure (based on EDPB Guidelines 04/2022 on DPIA (based on WP29 WP248 rev.01)):
 
 **1. Description of processing** — systematic description per Art. 35(7)(a): purposes, nature, scope, context, categories of data, recipients, retention periods.
 

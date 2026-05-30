@@ -26,7 +26,7 @@ Fast triage — 5 minutes, not 5 hours. The output is a routing decision: stop /
 Ask these three questions, then give a verdict:
 
 **Q1: What data is involved?**
-Classify: personal data only / special categories (Art. 9: health, biometric, genetic, racial/ethnic, political, religious, trade union, sexual orientation data) / criminal records (Art. 10) / children's data / financial/location data (high personal nature per EDPB).
+Classify: personal data only / special categories (Art. 9: racial or ethnic origin, political opinions, religious beliefs, philosophical beliefs, trade union membership, genetic data, biometric data (for identification purposes), health data, sex life, sexual orientation) / criminal records (Art. 10) / children's data / financial/location data (high personal nature per EDPB).
 
 **Q2: What happens to the data?**
 Classify the operation: collect only / automated decision-making with significant effects / systematic monitoring / profiling / matching datasets / sharing with new recipients / transferring outside EU.

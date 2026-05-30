@@ -11,7 +11,7 @@ argument-hint: "[describe the company's IP situation]"
 # /fi-startup-legal:ip-assignment
 
 1. Load profile. If placeholders, stop.
-2. Call `mcp__velvoite__get_finnish_statute("TSL", "7")` — employee invention rules.
+2. Call `mcp__velvoite__get_finnish_statute("KEKSINTOL")` — Laki oikeudesta työntekijän tekemiin keksintöihin (656/1967), the employee inventions act.
 3. Run the IP audit workflow. Flag gaps. This is advisory — attorney review required.
 
 ---
