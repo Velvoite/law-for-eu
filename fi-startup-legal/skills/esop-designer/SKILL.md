@@ -45,6 +45,13 @@ An alternative to options: the company issues new shares to employees at the "ma
 
 Conditions (verify from fetched §66a statute): company must be unlisted; employee must work in the company; issue price must be at or above mathematical value.
 
+**Additional §66a conditions (all must be met):**
+- **Majority-of-employees rule:** The directed share issue must be offered to **more than half of the company's employees**. A targeted grant to selected founders or key hires does NOT qualify — this is a common and costly mistake.
+- **>10% shareholder exclusion:** Any person (together with their spouse and minor children) who already owns more than 10% of the company's shares or votes **cannot participate** in a §66a issue and is excluded from the majority count.
+- **Parent company restriction:** A parent company cannot use §66a to issue its own shares to employees of a subsidiary. The issuing company must be the direct employer.
+
+If any of these conditions are not met, the subscription falls under TVL §66 (exercise taxation) rather than §66a.
+
 Key difference from §66: shares are issued immediately (no vesting cliff possible via the scheme itself — but a separate SHA leaver mechanism can claw back shares). This makes §66a less flexible for standard cliff-and-monthly-vest ESOP structures.
 
 **Practical comparison table (based on current law as of May 2026):**

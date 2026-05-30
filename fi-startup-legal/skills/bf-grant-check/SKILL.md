@@ -31,7 +31,11 @@ IP developed in the BF-funded project must remain with the funded entity (same Y
 ### EEA control transfer restriction (5-year rule)
 Within 5 years of receiving the final BF funding installment: a control transfer outside the European Economic Area requires prior BF approval.
 
+**Note on the 5-year measurement period:** The 5 years runs from the **date of final payment** of the last funding installment, which may differ from the project completion date. Founders frequently miscalculate by measuring from project end rather than final payment. Check the payment history in your grant portal.
+
 **"Control transfer"** = a change resulting in a non-EEA entity (person or company) acquiring direct or indirect majority control (>50% of shares or voting rights).
+
+**Important:** The >50% threshold is the standard baseline, but **your specific grant agreement controls**. Some Business Finland programs (particularly large R&D and TUTLI grants post-2020) define control more broadly — some trigger at "significant influence" or use a lower ownership threshold. Always verify the exact wording in your grant agreement before assuming >50% is the trigger. When in doubt, contact Business Finland directly before proceeding with any transaction.
 
 **Triggers (check all):**
 - [ ] New investor acquires >50% of shares

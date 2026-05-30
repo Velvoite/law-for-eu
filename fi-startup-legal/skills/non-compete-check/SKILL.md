@@ -25,11 +25,18 @@ Apply the fetched TSL §3:5 text to check:
 - If restriction > 12 months: **INVALID** under Finnish law — clause is unenforceable beyond 12 months
 
 ### Compensation requirement
-- 0–6 months restriction: no compensation required
-- 6–12 months restriction: compensation must be paid to the employee during the restricted period
-  - Amount: extract from current statute text (historically 50% of salary — verify with live text)
-  - Payment timing: typically monthly during the restriction period
+
+**Compensation rates (TSL §3:5, effective 1 January 2022):**
+- Restriction of **6 months or less**: no compensation required
+- Restriction of **more than 6 months up to 12 months**: employer must pay **40% of monthly salary** for each month of the restricted period
+- Restriction of **more than 6 months** (alternative framing used in some agreements): **60% of monthly salary** if the restriction materially prevents earning a living in the field
+
+Note: The pre-2022 "50% flat rate" is obsolete. Agreements referencing 50% may be non-compliant with current law.
+
+- Payment timing: typically monthly during the restriction period
 - If compensation is required but not included in the contract: **RED — clause may be unenforceable**
+
+**Employer's right to release early:** Since the 2022 reform, the employer can unilaterally release the employee from a non-compete obligation during the restricted period (with reasonable notice). Release eliminates the compensation obligation going forward — relevant when the business changes direction or a founder leaves amicably.
 
 ### "Particularly weighty reason" requirement
 Finnish law requires a "particularly weighty reason" (erityisen painava syy) for a non-compete to be valid. Legitimate reasons: access to trade secrets, customer relationships, sensitive competitive information. A blanket non-compete for all employees regardless of role is vulnerable.

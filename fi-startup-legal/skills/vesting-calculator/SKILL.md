@@ -22,7 +22,18 @@ argument-hint: "[describe: grant size, start date, cliff, vesting period, or 'ca
 - **Total vesting period:** 4 years
 - **Cliff:** 1 year (nothing vests before the 1-year anniversary)
 - **Post-cliff:** monthly vesting (1/48th per month after the cliff)
-- **Exercise window:** 10 years from grant (Finnish market standard; some companies use 5 years — flag if <5 years as this is restrictive)
+- **Exercise window:** Typically **5–10 years** from grant date in Finnish startup practice. 10 years is common in US-influenced term sheets; 5–7 years is also standard in Finnish-law option agreements. Windows shorter than 5 years are restrictive and should be flagged. The grant-level exercise window is separate from the **post-termination exercise window** — see below.
+
+## Post-termination exercise window
+
+**This is often the more practically important number.** Many Finnish option agreements give departing employees only **30–90 days to exercise vested options** after leaving employment, regardless of the grant-level 10-year window. An employee who cannot fund the exercise within that window loses vested options.
+
+When reviewing or drafting an option agreement, always check:
+- What is the post-termination exercise window? (30 days, 90 days, longer?)
+- Does it differ for Good Leaver vs. Bad Leaver?
+- Is the company obligated to give the employee advance notice of termination so they can arrange financing for exercise?
+
+**TVL §66 tax note:** If an employee exercises options after leaving (within the post-termination window), TVL §66 earned income tax arises at exercise but the company may no longer be the employer for payroll withholding purposes. This creates practical complications — route to a Finnish tax advisor for departing employees exercising options.
 
 ## Vesting calculation
 

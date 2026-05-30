@@ -37,7 +37,7 @@ The Startup Foundation (startup-saatio.fi) seriesseed.fi templates are the Finni
 |---|---|---|
 | Pre-emption right | Existing shareholders have right to buy before external transfer | OYL §3 allows; must be in SHA or yhtiöjärjestys |
 | ROFR (right of first refusal) | At same price as third-party offer | |
-| Drag-along | Majority (e.g. 75%) can drag minority in exit | Must be in SHA; cannot be in yhtiöjärjestys alone |
+| Drag-along threshold | >2/3 of all shares (seriesseed.fi 4.0 standard) — 75% is above standard and more protective for founders; anything below 2/3 is aggressive | Must be in SHA; cannot be in yhtiöjärjestys alone |
 | Tag-along | Minority can join any majority sale at same price | |
 | Lock-up | Typically 12 months post-IPO if applicable | |
 
@@ -49,6 +49,8 @@ The Startup Foundation (startup-saatio.fi) seriesseed.fi templates are the Finni
 | Information rights | Quarterly financials, annual audited accounts | |
 | Board seat | Lead investor gets 1 board seat for rounds >€500k | |
 | Protective provisions | New share issuance, M&A, budget approval require investor consent | List the standard matters |
+
+**Cross-border governing law check:** If any investor is foreign, confirm the SHA specifies governing law explicitly. A SHA drafted under Finnish OYL assumptions with Swedish or UK governing law creates significant interpretation gaps. Flag for outside counsel if governing law is ambiguous.
 
 ### 2024 seriesseed.fi updates
 The Startup Foundation updated templates in 2024 to add:

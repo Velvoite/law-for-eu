@@ -39,8 +39,9 @@ Walk through each item:
 - [ ] Auditor: required if 2+ of: (1) turnover >€12M, (2) balance sheet >€6M, (3) >50 employees. Most early startups: no auditor required.
 
 **PRH registration:**
-- [ ] Register at prh.fi/yritykset/perustaminen (online, ~1–3 business days). 2026 fees: €300 guided package / €400 self-prepared documents. Paper forms no longer accepted from 1.1.2026.
+- [ ] Register at prh.fi/yritykset/perustaminen (online, ~1–3 business days). **PRH registration fee (2026):** Verify the current fee at prh.fi/hinnasto before filing — fees are updated annually. As a reference point, recent online incorporation via YTJ e-service has been approximately €275–400 depending on the path chosen. The online (sähköinen) route is both faster and typically cheaper than paper equivalents (which are no longer accepted from 1.1.2026).
 - [ ] YEL (entrepreneur pension): sole founder working in own company must register YEL within 3 months if annual work income >€9,010.28 (2026 threshold)
+- If no board member or managing director (toimitusjohtaja) is resident in Finland, the company must designate a **Finnish address agent** (asiamies) — required under OYL if all representatives are EEA-resident but based abroad.
 
 **After incorporation:**
 - [ ] Open business bank account

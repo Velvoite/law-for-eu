@@ -63,7 +63,7 @@ Include in every employment contract:
 Note: Finnish employee invention law (Laki oikeudesta työntekijän tekemiin keksintöihin) gives employer rights to employment-related inventions by default — explicit assignment clause removes any ambiguity.
 
 ## YEL for founders
-Remind: founders working in their own company with annual work income >€9,010.28 (2026) must register YEL pension insurance within 3 months. Failure results in retroactive claims with interest.
+**YEL registration threshold:** The lower earnings limit (alin YEL-työtulo) is adjusted annually by an earnings index. The 2025 figure was approximately €9,010/year. For the current year's exact threshold, check **etk.fi** (Eläketurvakeskus) or **kela.fi** before advising a founder on their YEL obligation — using a stale figure could cause a founder to incorrectly conclude they are below the threshold. Failure to register results in retroactive claims with interest.
 
 ---
 
