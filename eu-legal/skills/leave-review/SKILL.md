@@ -194,9 +194,10 @@ No EU minimum sick leave entitlement. National law governs.
 
 ### Finland
 
-**Employer obligation (TSL Ch. 2 §11):**
-- Full salary for up to **9 working days** per illness episode (depending on collective agreement — up to 28 days in many TES)
-- Statutory minimum: full salary for illness duration up to 1 month if employed ≥1 month; shorter periods for shorter tenure
+**Finnish employer sick pay obligation (TSL Ch. 2 §11):**
+- Employment under 1 month: no statutory sick pay obligation
+- Employment 1 month to 3 years: employer pays full salary for the duration of incapacity up to **9 working days** per illness episode
+- Employment over 3 years: employer pays full salary up to **4 weeks** per illness episode (many collective agreements (TES) extend this to 28 days or longer regardless of tenure — check applicable TES)
 
 **After employer sick pay period:**
 - Kela pays sairauspäiväraha (sickness allowance) from day 2 of illness (omavastuu day 1): approximately 70% of income, up to 300 working days

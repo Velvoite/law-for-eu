@@ -22,7 +22,13 @@ argument-hint: "[describe the AI system and its use case]"
 
 ## Purpose
 
-The EU AI Act (Regulation (EU) 2024/1689, applicable from 2 August 2026 for most provisions) creates tiered obligations based on risk. This skill classifies the system, maps the applicable obligations, and flags where GDPR and AI Act requirements overlap and can be addressed jointly.
+The EU AI Act (Regulation (EU) 2024/1689, applicable from 2 August 2026 for most provisions) creates tiered obligations based on risk.
+
+Application dates are phased:
+- **Already in force — 2 February 2025:** Prohibited practices (Art. 5). If you deploy any prohibited AI system, you are already non-compliant.
+- **2 August 2025:** GPAI model obligations
+- **2 August 2026:** High-risk AI systems (Annex III — this is the date relevant for financial institution deployers)
+- **2 August 2027:** Annex I safety component systems This skill classifies the system, maps the applicable obligations, and flags where GDPR and AI Act requirements overlap and can be addressed jointly.
 
 ## Step 1: Actor role
 
@@ -45,6 +51,8 @@ These are prohibited regardless of use case. Check:
 - Exploitation of vulnerabilities of specific groups
 - Emotion recognition in workplace or educational institutions (except for medical/safety purposes)
 - Biometric categorisation based on sensitive characteristics
+- AI systems used by law enforcement for **predictive policing of individuals** based solely on profiling (Art. 5(1)(d))
+- AI systems that **scrape facial images from the internet or CCTV footage** to build or expand facial recognition databases (Art. 5(1)(e))
 
 If any prohibited practice applies: **STOP. This system cannot be deployed. Route to legal immediately.**
 
@@ -57,7 +65,7 @@ If any prohibited practice applies: **STOP. This system cannot be deployed. Rout
 | Use case | High-risk? | Notes |
 |---|---|---|
 | Credit scoring / creditworthiness assessment | Yes | Annex III §5(b) |
-| Fraud detection affecting individuals | Yes | Annex III §5(b) |
+| Fraud detection with individual profiling/scoring | ⚠️ Depends | Annex III §5(b) only if system profiles or scores individuals — generic transaction monitoring without individual scoring is NOT high-risk under Annex III. Assess whether the system produces individual risk scores or decisions. |
 | Insurance underwriting (individual risk pricing) | Yes | Annex III §5(b) |
 | Employment decisions (recruitment, promotion, termination) | Yes | Annex III §4 |
 | Identity verification / biometric authentication | Yes | Annex III §1 |

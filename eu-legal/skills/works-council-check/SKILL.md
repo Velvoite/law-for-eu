@@ -120,9 +120,8 @@ EU collective redundancy rules apply where national law implements the Directive
 |---|---|---|
 | 20–99 employees | ≥ 10 redundancies in 30 days | Minimum 30 days advance notice to authority |
 | ≥ 100 employees | ≥ 10% of workforce OR ≥ 30 in 30 days | Minimum 30 days advance notice to authority |
-| ≥ 300 employees | ≥ 30 in 30 days | Minimum 30 days advance notice to authority |
 
-**Finland implementing act:** TSL §6 + YT-laki §51 — notification to TE-toimisto (Employment and Economic Development Office) required when ≥10 redundancies within 90 days.
+**Finland implementing act:** YT-laki §48 + YT-laki §51 — notification to TE-toimisto (Employment and Economic Development Office) required when ≥10 redundancies within 90 days.
 
 **Germany implementing act:** KSchG §§ 17-18 — notification to Bundesagentur für Arbeit required before collective dismissals. Failure: dismissals void.
 
