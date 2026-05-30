@@ -46,7 +46,13 @@ Review the last significant privacy activities (from context or by asking the us
 
 For each activity: was the privacy notice updated? Is the processing documented in a record of processing activities (RoPA)? Is the legal basis still valid (particularly for consent-based processing: was consent obtained; can users withdraw)?
 
-GDPR Art. 30 RoPA check: if more than 250 employees, or high-risk processing — is a current RoPA maintained?
+**GDPR Art. 30 RoPA obligation:** Required for all organisations UNLESS:
+- Fewer than 250 employees AND
+- Processing is occasional (not systematic/regular) AND
+- Processing does not include special category data (Art. 9) or criminal data (Art. 10) AND
+- Processing is unlikely to result in a risk to data subjects' rights
+
+If ANY of the three exceptions apply (not occasional / special categories / likely risk), the RoPA obligation applies regardless of headcount. A sub-250 company with ongoing HR data processing must maintain a RoPA because HR data processing is "not occasional."
 
 ## Guardrail
 

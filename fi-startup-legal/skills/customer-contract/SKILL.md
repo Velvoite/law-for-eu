@@ -45,6 +45,14 @@ Finnish law default for Finnish customers. For international customers:
 - Scheduled maintenance windows excluded
 - Remedies: service credits, not cash
 
+### VAT
+
+- [ ] Does the startup need to charge VAT on this contract?
+  - VAT registration mandatory if annual turnover exceeds **€15,000** (2026 threshold, AVL §3)
+  - Below threshold: registration optional but can be beneficial if customers are VAT-registered businesses
+  - First contract should clarify whether prices are VAT-inclusive or VAT-exclusive; state VAT registration number (ALV-numero) if registered
+  - Foreign customers (EU business-to-business): reverse charge mechanism applies — no Finnish VAT charged, customer accounts for VAT in their country
+
 ### Termination
 - Notice period: 30-90 days for convenience
 - Data return/deletion obligations on termination

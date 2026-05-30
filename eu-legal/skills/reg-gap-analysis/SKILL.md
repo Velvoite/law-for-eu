@@ -24,8 +24,8 @@ argument-hint: "[regulation or description] — e.g. 'dora' or 'EU AI Act high-r
 Unlike US federal rulemaking (notice-and-comment under the APA), EU regulations follow a different pipeline. Flag the current status of the regulation being analysed:
 
 - **Commission proposal** → Council and Parliament positions → **trilogue** → **adoption** → publication in Official Journal → **entry into force** (20 days after publication) → **application date** (often 12–24 months after entry into force)
-- **Level 2**: Delegated Regulations, Implementing Acts (Commission)
-- **Level 3**: RTS/ITS (EBA, ESMA, EIOPA), Guidelines, Q&As (soft law, but supervisory expectations)
+- **Level 2**: Delegated Regulations, Implementing Acts (Commission); **RTS and ITS** drafted by EBA/ESMA/EIOPA and adopted by the Commission as binding Delegated/Implementing Regulations
+- **Level 3**: Guidelines, Recommendations, Q&As (EBA, ESMA, EIOPA — soft law, but supervisory expectations; national competent authorities generally expect compliance)
 
 Note: **Regulations** are directly applicable in all member states. **Directives** require national transposition — obligations may vary by member state.
 

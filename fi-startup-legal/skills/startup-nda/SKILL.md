@@ -35,7 +35,7 @@ A trade secret is information that:
 | Return/destruction | On request or termination | |
 | Governing law | Finnish law | |
 | Dispute resolution | Finnish courts or arbitration | |
-| Remedies | Injunction + damages (LSL §11) | |
+| Remedies | §8 (injunction/prohibition) + §11 (damages and unjust enrichment) | |
 
 ### Investor NDA note
 Finnish VCs and angels typically do NOT sign NDAs before a first meeting — standard practice. If an investor insists on signing before seeing your deck, it may signal inexperience. Consider sharing your deck without requiring an NDA for early-stage fundraising conversations.

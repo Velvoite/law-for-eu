@@ -54,6 +54,9 @@ If yes: ask size (%) and whether it's TVL §66 options or a §66a share issue sc
 "Is your product or service AI-based? (Determines whether EU AI Act compliance is relevant for you.)"
 If yes: offer Velvoite API key for AI Act depth. Note: free 30-day trial at velvoite.eu.
 
+**If no Velvoite API key:** Profile setup completes without corpus backing. Note to the user:
+> "Skills will work using EU law knowledge, but statute lookups (Finnish TSL, OYL, TVL §66) and EU regulation verification (GDPR Art. 28, DORA Art. 30) will use training data rather than live sources. For legally-sensitive decisions, verify citations at finlex.fi and eur-lex.europa.eu. Add `VELVOITE_API_KEY` to your `.envrc` for live verification — free 30-day trial at velvoite.eu."
+
 ---
 
 ## Write profile

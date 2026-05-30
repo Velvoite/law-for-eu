@@ -53,6 +53,15 @@ See sha-review — broad-based weighted average = **GREEN**; full ratchet = **RE
 ### ESOP/option pool
 What size? Typical at seed: 10–15% pre-money. If investor demands 20%+ pre-money: **AMBER** (dilutes founders significantly).
 
+### Tesi co-investment (if applicable)
+
+If Tesi (Finnish Industry Investment Ltd) is co-investing:
+- Tesi co-invests **pari passu** alongside private lead investors — same share class, same price, no preference over other investors
+- No management fees or carried interest on Tesi's portion
+- Tesi follows market standard terms set by the private lead — they do not lead rounds
+- Tesi requires the company to be Finnish-domiciled (or have substantial Finnish operations) and the lead investor to be a qualified VC or institutional investor
+- Flag: terms that give Tesi any preference over private investors or that deviate from pari passu are non-standard and warrant verification with Tesi directly
+
 ---
 
 ## Guardrail

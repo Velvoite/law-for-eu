@@ -47,7 +47,7 @@ These escalate regardless of EUR value. Check each:
 |---|---|
 | Any contract with cross-border data transfers outside the EEA (no adequacy decision, no SCCs, no BCRs) | Legal review required — GDPR Art. 44–49 |
 | Any ICT third-party agreement for a financial entity (DORA in scope) | DORA compliance check required — route to `/eu-legal:vendor-agreement-review` if not yet run |
-| Governing law outside the EU | Flag to legal — enforcement of EU rights (GDPR, DORA, TSD) may be impaired |
+| Governing law outside the EU | Flag to legal — enforcement of EU rights (GDPR, DORA, TSD) may be impaired. Pre-approved exception: if the company's `commercial.md` playbook explicitly lists English law (England & Wales) as an accepted governing law choice, do not trigger this escalation for English-law contracts — the user has made a deliberate post-Brexit commercial choice. Flag only truly unexpected non-EU governing law (e.g., US law, Swiss law on a purely EU deal). |
 | Liability cap below EUR [threshold from commercial.md] | Flag — potential exposure exceeds protected threshold |
 | Any uncapped liability provision | Automatic escalation regardless of EUR value |
 | Any IP assignment to the vendor | Automatic escalation — legal sign-off required |
