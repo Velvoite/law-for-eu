@@ -21,6 +21,8 @@ argument-hint: "[describe your product and what user data you handle]"
 ### Do you need to comply?
 Yes, if you: (a) are established in the EU, or (b) offer goods/services to EU individuals, or (c) monitor EU individuals. Finnish startups: always yes.
 
+**Live verification:** Call `mcp__velvoite__get_eu_regulation_article("gdpr", "13")` for privacy notice requirements and `mcp__velvoite__get_eu_regulation_article("gdpr", "28")` for processor DPA requirements. Fetch the returned section_url values to verify the requirement lists below against current EUR-Lex text.
+
 ### Privacy notice (tietosuojaseloste)
 Required by GDPR Art. 13/14 before collecting personal data. Must cover:
 - [ ] Who you are (controller identity + contact)

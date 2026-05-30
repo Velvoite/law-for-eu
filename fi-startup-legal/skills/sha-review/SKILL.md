@@ -19,6 +19,8 @@ argument-hint: "[paste or describe the SHA, or 'seriesseed-check' for a quick ch
 
 ## seriesseed.fi standard checklist
 
+**Note on sources:** seriesseed.fi SHA terms are private contractual standards, not statute — no EUR-Lex verification applies. For the OYL statutory rights referenced (pre-emption, share transfer restrictions), call `mcp__velvoite__get_eu_regulation_article` is not relevant here; instead call `mcp__velvoite__get_finnish_statute("OYL", "3")` to verify the Finnish Companies Act provisions on share transfers.
+
 The Startup Foundation (startup-saatio.fi) seriesseed.fi templates are the Finnish market standard for seed rounds. Review each section:
 
 ### Leaver provisions
