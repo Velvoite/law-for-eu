@@ -14,6 +14,10 @@ last_reviewed: 2026-06-01
 # /fi-startup-legal:non-compete-check
 
 1. Load profile.
+1.5. **Framework gate:** Before applying TSL §3:5, confirm the non-compete is in an employment agreement (governed by TSL). If it appears to be in any of the following, halt and flag:
+   - SHA (shareholders' agreement / osakassopimus) → TSL §3:5 does not apply; governed by contract law. Route to `/fi-startup-legal:sha-review` or commercial counsel.
+   - Board member service agreement → TSL does not apply to board members.
+   - Consulting/contractor agreement → classification must be confirmed first (TSL only applies to employees); run `/fi-startup-legal:non-compete-check` only after confirming employment status.
 2. Call `mcp__velvoite__get_finnish_statute("TSL", "3:5")` — fetch current non-compete statute text.
 3. Validate against the live statute. Flag any issues.
 

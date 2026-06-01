@@ -38,6 +38,7 @@ GDPR Art. 12–15 (access), Art. 17 (erasure), Art. 20 (portability), Art. 16 (r
 Identify: access / erasure ("right to be forgotten") / portability / rectification / restriction / objection. A single request may cover multiple rights.
 
 Check escalation triggers from privacy.md — if any fire, flag before proceeding:
+- **Request appears to be from a supervisory authority (Tietosuojavaltuutettu, FIN-FSA, BaFin, BfDI, CNIL, DPC, or any regulator)** → **Route to legal immediately.** Supervisory authority access requests operate under different rules than GDPR Art. 12–22 DSARs — do not process through this workflow.
 - Involves special category data (Art. 9) → heightened care
 - Subject is under 16 → parental consent considerations
 - Litigation hold may apply → legal review before any erasure

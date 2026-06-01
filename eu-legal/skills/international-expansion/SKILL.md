@@ -76,6 +76,8 @@ The host country's mandatory rules on the following must be applied (regardless 
 
 ## Step 3: Country profiles
 
+> **⚠️ All numeric thresholds, durations, benefit amounts, minimum wages, and headcount figures in this section are `[model knowledge — verify with local counsel before relying]`. These change annually with legislation, collective agreement updates, and court interpretation. `last_verified: 2026-06-01`**
+
 ### Finland (FI) — for employers expanding into Finland
 
 **Legal entity requirement:**
@@ -139,7 +141,7 @@ The host country's mandatory rules on the following must be applied (regardless 
 **Top 3 surprises for Finnish employers in Germany:**
 1. The Betriebsrat has veto rights on hiring, transfers, and dismissals — not just a consultation right. Failure to consult makes the dismissal void, not just risky.
 2. Collective redundancy notification to Bundesagentur für Arbeit (§17 KSchG) has strict formal requirements — missing the form or timing makes the dismissals void, regardless of substantive grounds.
-3. The 6-week employer sick pay obligation (EFZG) is higher than Finnish employers typically expect — build this into employment cost modelling.
+3. The 6-week employer sick pay obligation (EFZG) `[model knowledge — verify current EFZG duration]` is higher than Finnish employers typically expect — build this into employment cost modelling.
 
 ---
 
@@ -156,8 +158,8 @@ The host country's mandatory rules on the following must be applied (regardless 
 
 **Dismissal:**
 - TLS requires grounds for dismissal after probation
-- Notice periods: employee-side 30 days; employer-side 15–90 days by service length
-- Severance: 1 month salary for financial/production dismissals
+- Notice periods: employee-side 30 days; employer-side 15–90 days by service length `[model knowledge — verify current TLS text]`
+- Severance: 1 month salary for financial/production dismissals `[model knowledge — verify current TLS text]`
 
 **Collective agreement:**
 - No erga omnes system; collective agreements bind only signatories
@@ -178,9 +180,9 @@ The host country's mandatory rules on the following must be applied (regardless 
 - Written contract required; probation max 6 months (provanställning)
 
 **Works council / MBL:**
-- MBL (Medbestämmandelagen) — applies to all employers with ≥10 employees
+- MBL (Medbestämmandelagen) — applies to all employers with ≥10 employees `[model knowledge — verify current MBL threshold]`
 - Primary negotiation obligation before major changes (§11 MBL)
-- Collective agreements very widely used (~90% coverage erga omnes through industrywide)
+- Collective agreements very widely used (~90% coverage erga omnes through industrywide) `[model knowledge — verify current coverage rate]`
 
 **Dismissal:**
 - Saklig grund (objective grounds) required — similar to but stricter than Finnish "substantial reason"
@@ -199,12 +201,12 @@ The host country's mandatory rules on the following must be applied (regardless 
 **Employment contract:**
 - Burgerlijk Wetboek Art. 7:610 — employment law in the Civil Code
 - Written contract standard; probation max 1 month (up to 2 months for contracts >2 years)
-- Transitievergoeding (transition payment) on termination: 1/3 month salary per year, regardless of reason — payable from day 1
+- Transitievergoeding (transition payment) on termination: 1/3 month salary per year, regardless of reason — payable from day 1 `[model knowledge — verify current formula]`
 
 **Works council / WOR:**
-- WOR (Wet op de ondernemingsraden) — applies at ≥50 employees
+- WOR (Wet op de ondernemingsraden) — applies at ≥50 employees `[model knowledge — verify current WOR threshold]`
 - Ondernemingsraad (OR) has consent and advisory rights
-- At 10–49 employees: personeelsvertegenwoordiging (PVT) — lighter consultation body
+- At 10–49 employees: personeelsvertegenwoordiging (PVT) — lighter consultation body `[model knowledge — verify current PVT threshold]`
 - 🔴 Consent right: OR must consent before: profit sharing, pension changes, working time changes, salary systems, disciplinary procedures, personnel monitoring
 
 **Dismissal:**
@@ -227,9 +229,9 @@ The host country's mandatory rules on the following must be applied (regardless 
 - Written contract required; probation: 2 months (workers), 3 months (supervisors), 4 months (cadres)
 
 **Works council / CSE:**
-- CSE (Comité Social et Économique) mandatory from ≥11 employees
+- CSE (Comité Social et Économique) mandatory from ≥11 employees `[model knowledge — verify current Code du travail threshold]`
 - At ≥11 employees: basic consultation rights
-- At ≥50 employees: full CSE with broader powers; BDES (economic database) obligation
+- At ≥50 employees: full CSE with broader powers; BDES (economic database) obligation `[model knowledge — verify current threshold]`
 - 🔴 Strong co-determination: CSE must be consulted before major changes; consultation failure can result in offence d'entrave (criminal obstruction charge against management)
 
 **Dismissal:**

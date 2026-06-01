@@ -32,7 +32,11 @@ Ask one topic per message.
 "Do you have a Data Protection Officer? (Required if: public authority; large-scale systematic monitoring; large-scale special category data processing.) Name or 'not required' or 'not yet appointed'."
 
 ### 4. Lead supervisory authority
-"Which supervisory authority is your lead authority under GDPR Art. 56? (e.g. FIN-FSA / Tietosuojavaltuutettu for Finland, BfDI / LfDI for Germany, ICO for UK entities, CNIL for France, DPC for Irish-registered)"
+"Which supervisory authority is your lead authority under GDPR Art. 56? Your lead SA is in the EU member state where your main establishment is (where central administration or main processing decisions are made).
+
+Examples: Tietosuojavaltuutettu (Finland), BfDI or the relevant LfDI (Germany), CNIL (France), DPC (Ireland), AP (Netherlands).
+
+⚠️ **ICO (UK) is NOT an EU supervisory authority.** Post-Brexit, ICO operates under UK GDPR and cannot be the Art. 56 lead SA for EU-incorporated entities. List ICO only if your entity is incorporated in the UK or has significant UK operations requiring UK GDPR compliance alongside EU GDPR."
 
 ### 5. DPA playbook — processor side
 "When a customer sends you their DPA (you are the processor), what are your standard positions on:

@@ -48,6 +48,8 @@ Accept answers in free text or as a summary of an existing contract.
 
 **Directive 2024/2831 Art. 4 — applies where platform work is involved.**
 
+> **Transposition status `[last_verified: 2026-06-01]`:** Directive 2024/2831 was adopted November 2024; transposition deadline is December 2026. As of June 2026, neither Finland nor Germany has enacted transposing national legislation. Apply these indicators as leading indicators of expected post-transposition law — they are not yet directly enforceable in FI or DE national courts, but FI and DE courts already apply similar logic through existing case law (see Steps 3–4). Flag this in any written analysis.
+
 Five indicators. Count how many are present:
 
 | Indicator | Present? |
