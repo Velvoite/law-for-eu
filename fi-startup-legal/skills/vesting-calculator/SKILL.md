@@ -7,6 +7,9 @@ description: >
   Use when asking "vesting schedule", "how much has [person] vested",
   "what happens if a co-founder leaves".
 argument-hint: "[describe: grant size, start date, cliff, vesting period, or 'calculate [name]']"
+version: 0.1.0
+owner: Silly Pilot Oy
+last_reviewed: 2026-06-01
 ---
 
 # /fi-startup-legal:vesting-calculator
@@ -63,4 +66,4 @@ Show the post-acceleration vested share count.
 
 ## Guardrail
 
-Vesting calculations are based on the inputs provided and market-standard terms. Actual vesting is governed by the signed option agreement and SHA. Consult the actual documents — this skill does not read them.
+Vesting calculations are based on the inputs provided and market-standard terms. Actual vesting is governed by the signed option agreement and SHA. Consult the actual documents — this skill does not read them. Outputs are legal support tools — not legal advice. No attorney-client relationship or privilege is created by using this skill.

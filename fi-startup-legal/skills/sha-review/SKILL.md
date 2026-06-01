@@ -6,14 +6,24 @@ description: >
   ROFR, anti-dilution, board composition, protective provisions. Use when reviewing
   a SHA, asking "is our SHA standard", or preparing for a funding round.
 argument-hint: "[paste or describe the SHA, or 'seriesseed-check' for a quick checklist]"
+version: 0.1.0
+owner: Silly Pilot Oy
+last_reviewed: 2026-06-01
+seriesseed_template_version: "4.0"
 ---
 
 # /fi-startup-legal:sha-review
 
 1. Load profile. If placeholders, stop.
-2. Call `mcp__velvoite__get_finnish_statute("OYL", "3")` for share transfer and buyback rules.
-3. Call `mcp__velvoite__get_finnish_statute("OYL", "9")` for shareholder rights.
-4. Review against seriesseed.fi standard. Output: term-by-term RAG status.
+2. **Detect operating mode:**
+   - **Mode 1 — Document review:** User has provided actual SHA text. Run a term-by-term comparison against the seriesseed.fi v4.0 standard.
+   - **Mode 2 — Checklist only:** No document provided. Output the standard checklist with market-standard terms. Label output: "[CHECKLIST MODE — no document reviewed. Reflects market standard only, not your actual SHA.]"
+   State the mode explicitly at the start of the output.
+3. Call `mcp__velvoite__get_finnish_statute("OYL", "3")` for share transfer and buyback rules.
+4. Call `mcp__velvoite__get_finnish_statute("OYL", "9")` for shareholder rights.
+5. **Output preamble (before any RAG table):**
+   > ⚠️ **Attorney review required before signing.** This is a template comparison — not a legal opinion. GREEN status means "matches market standard", not that a clause is enforceable or suitable for your investor relationship. A Finnish startup lawyer must review before you sign.
+6. Review against seriesseed.fi v4.0 standard. Output: term-by-term RAG status.
 
 ---
 
@@ -21,7 +31,9 @@ argument-hint: "[paste or describe the SHA, or 'seriesseed-check' for a quick ch
 
 **Note on sources:** seriesseed.fi SHA terms are private contractual standards, not statute — no EUR-Lex verification applies. For the OYL statutory rights referenced (pre-emption, share transfer restrictions), call `mcp__velvoite__get_eu_regulation_article` is not relevant here; instead call `mcp__velvoite__get_finnish_statute("OYL", "3")` to verify the Finnish Companies Act provisions on share transfers.
 
-The Startup Foundation (startup-saatio.fi) seriesseed.fi templates are the Finnish market standard for seed rounds. Review each section:
+The Startup Foundation (startup-saatio.fi) seriesseed.fi templates are the Finnish market standard for seed rounds. This skill reflects **seriesseed.fi v4.0 (2024 update)** — verify the current version at seriesseed.fi before a live deal. `last_verified: 2026-06-01`. Key 2024 changes: three-tier leaver, KYC/AML provisions.
+
+Review each section:
 
 ### Leaver provisions
 | Term | Market standard | Status |
@@ -62,6 +74,16 @@ The Startup Foundation updated templates in 2024 to add:
 
 ---
 
+## What this skill does NOT do
+
+- **Foreign-law SHAs**: Applies Finnish law framing only. For English-law, Swedish-law, or US Delaware SHAs, route to a specialist.
+- **Post-seed terms**: Covers seriesseed.fi seed-stage standard. Series A and later rounds use different market terms.
+- **Enforceability assessment**: RAG status means deviation from market standard — not that a clause is legally void or enforceable.
+- **Tax implications of leaver provisions**: Good/bad leaver treatment has TVL implications — run `/fi-startup-legal:esop-designer` for tax framing.
+- **Legal advice**: Outputs are legal support tools. No attorney-client relationship or privilege is created.
+
+---
+
 ## Guardrail
 
-SHA review identifies deviations from market standard. Whether a deviation is acceptable depends on the specific investor relationship and negotiating dynamics. Attorney review required before signing.
+SHA review identifies deviations from market standard. Whether a deviation is acceptable depends on the specific investor relationship and negotiating dynamics. Attorney review required before signing. Outputs are legal support tools — not legal advice. No attorney-client relationship or privilege is created by using this skill. GREEN status is not legal clearance to sign.

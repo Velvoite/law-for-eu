@@ -7,6 +7,9 @@ description: >
   terms. Use when asking "how do we set up options", "ESOP for our startup",
   "TVL §66 vs §66a", "how does the 2026 option reform affect us".
 argument-hint: "[describe the situation: company stage, number of beneficiaries, amounts]"
+version: 0.1.0
+owner: Silly Pilot Oy
+last_reviewed: 2026-06-01
 ---
 
 # /fi-startup-legal:esop-designer
@@ -84,4 +87,4 @@ From fetched OYL §10 text, apply current rules:
 
 ## Guardrail
 
-Option scheme design has significant tax consequences for employees and the company. The TVL §66 reform was a government proposal as of May 2026 — verify current enactment status using the live statute text fetched above. This skill reads live Finlex data but does not replace advice from a Finnish tax advisor (veroasiantuntija). Before implementing any option scheme, have the scheme documents reviewed by a lawyer.
+Option scheme design has significant tax consequences for employees and the company. The TVL §66 reform was a government proposal as of May 2026 — verify current enactment status using the live statute text fetched above. This skill reads live Finlex data but does not replace advice from a Finnish tax advisor (veroasiantuntija). Before implementing any option scheme, have the scheme documents reviewed by a lawyer. Outputs are legal support tools — not legal advice. No attorney-client relationship or privilege is created by using this skill.

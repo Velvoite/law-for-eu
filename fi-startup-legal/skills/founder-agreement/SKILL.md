@@ -6,6 +6,9 @@ description: >
   Use when setting up co-founder terms, asking "founder agreement checklist",
   "vesting schedule", "what should a co-founder agreement cover in Finland".
 argument-hint: "[number of founders, or describe the situation]"
+version: 0.1.0
+owner: Silly Pilot Oy
+last_reviewed: 2026-06-01
 ---
 
 # /fi-startup-legal:founder-agreement
@@ -59,4 +62,4 @@ For 3+ founders: voting thresholds for major decisions (new share issuance, sale
 
 ## Guardrail
 
-Founder agreements and vesting mechanics have significant long-term consequences. Have a Finnish startup lawyer review the final terms before signing. Recommended firms: Nordic Law, Dottir, Lexia Growth, Fondia.
+Founder agreements and vesting mechanics have significant long-term consequences. Have a Finnish startup lawyer review the final terms before signing. Recommended firms: Nordic Law, Dottir, Lexia Growth, Fondia. Outputs are legal support tools — not legal advice. No attorney-client relationship or privilege is created by using this skill.

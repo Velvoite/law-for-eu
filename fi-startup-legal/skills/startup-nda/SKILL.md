@@ -7,16 +7,27 @@ description: >
   expansions. Use when reviewing or drafting an NDA, asking "is this NDA okay",
   "NDA with investor", "NDA with partner", "M&A NDA".
 argument-hint: "[paste NDA text or describe: who is the counterparty and what is the purpose?]"
+version: 0.1.0
+owner: Silly Pilot Oy
+last_reviewed: 2026-06-01
 ---
 
 # /fi-startup-legal:startup-nda
 
 1. Load `~/.claude/plugins/config/fi-startup-legal/CLAUDE.md`. Extract: `bf_grants_active`, `ai_product`, `stage`. If placeholders, stop: run `/fi-startup-legal:startup-cold-start` first.
-2. Call `mcp__velvoite__get_finnish_statute("LSL", "2")` — fetch live trade secret definition.
+2. Call `mcp__velvoite__get_finnish_statute("LSL", "2")` — fetch live trade secret definition. If unavailable: note `[LSL §2 definition not fetched — verify current text at finlex.fi]` and proceed.
 3. Detect scenario from user input (see table below). Confirm before proceeding.
 4. Detect mode: **draft** (user wants an NDA generated) or **review** (user has an NDA to check).
 5. Apply profile adaptations (AI definition expansion, BF advisory note) if flags are set.
 6. Execute: draft from scaffold OR review against checklist.
+
+---
+
+## Confidence
+
+- **High (proceed and flag):** Clause clearly matches or clearly deviates from the checklist — state the finding plainly.
+- **Medium (surface with note):** Clause is ambiguous, non-standard, or sits between scenarios — flag with `[review]` and explain the ambiguity in one sentence.
+- **Low (halt and ask):** Clause type not covered by this skill's checklists, the scenario doesn't fit A/B/C, or the NDA structure is significantly non-standard — stop, explain what's outside scope, and ask before proceeding.
 
 ---
 
@@ -30,6 +41,20 @@ argument-hint: "[paste NDA text or describe: who is the counterparty and what is
 | Ambiguous | Ask explicitly |
 
 Confirm detected scenario before drafting or reviewing. Example: *"This looks like a Partner/Integration NDA — is that right, or is this a different context?"*
+
+---
+
+## Pre-flight escalation
+
+Before drafting or reviewing, flag and confirm if any of the following apply:
+
+| Signal | Action |
+|---|---|
+| Counterparty is non-Finnish (US, UK, non-EU) | Flag: governing-law section may not apply — confirm whether to proceed under Finnish framing or surface the gap for counsel |
+| Inbound NDA already has non-EU governing law | Do not silently apply Finnish-law checklist — surface the deviation and ask whether to proceed or route to counsel |
+| NDA appears employment-linked (contractor NDAs, post-employment restrictions) | Route to `/fi-startup-legal:non-compete-check`; employment-adjacent obligations are outside this skill's scope |
+| Four or more parties | Outside scope — route to Finnish counsel |
+| Structure does not fit scenario A, B, or C | State what's non-standard and ask before proceeding |
 
 ---
 
@@ -84,6 +109,8 @@ strategy — rare.
 | Governing law | Finnish law, Helsinki District Court | Non-EU governing law |
 
 ### Draft scaffold
+
+> ⚠️ **Draft only — not legal advice. Have a Finnish startup lawyer review before signing.**
 
 When drafting, generate a complete agreement using this structure. Replace all
 `[BRACKETED]` items with actual values from context. Apply AI expansion if
@@ -149,6 +176,8 @@ co-development. Both parties share material.
 | Governing law | Finnish law, Helsinki District Court | Non-EU governing law |
 
 ### Draft scaffold
+
+> ⚠️ **Draft only — not legal advice. Have a Finnish startup lawyer review before signing.**
 
 When drafting, generate a complete agreement using this structure. Replace all
 `[BRACKETED]` items with actual values from context. Apply AI expansion if
@@ -233,6 +262,8 @@ requiring full data room access.
 
 ### Draft scaffold
 
+> ⚠️ **Draft only — not legal advice. Have a Finnish startup lawyer review before signing.**
+
 When drafting, generate a complete agreement using this structure. Replace all
 `[BRACKETED]` items with actual values from context. Apply AI expansion if
 `ai_product: yes`.
@@ -293,9 +324,16 @@ Signed: _________________ Date: _____________
 
 ---
 
+## What this skill does NOT do
+
+- **Cross-border governing law:** Does not advise on NDA terms when a non-Finnish governing law is required. If the inbound NDA already sets non-Finnish governing law, this skill surfaces the issue and routes to counsel — it does not apply Finnish-law positions to a non-Finnish-law agreement.
+- **Employment-linked NDAs:** Post-employment NDAs, contractor confidentiality agreements, and non-solicitation clauses in employment contexts are governed by TSL §3:5 and are outside this skill's scope. Use `/fi-startup-legal:non-compete-check`.
+- **Multi-party NDAs:** Covers bilateral agreements only. Three or more parties require a different structure; route to Finnish counsel.
+- **Ongoing monitoring:** Does not track whether NDA obligations are being met or when the term expires.
+- **Legal advice:** Generates drafts and review checklists — not legal advice. A Finnish startup lawyer should review before signing.
+
+---
+
 ## Guardrail
 
-NDAs are enforceable contracts. For high-value situations — M&A due diligence,
-sharing core trade secrets with a strategic partner — have a Finnish startup
-lawyer review before signing. Recommended firms: Nordic Law, Dottir, Lexia
-Growth, Fondia.
+NDAs are enforceable contracts. Have a Finnish startup lawyer review before signing — not just for M&A and core trade secrets, but any NDA where a breach would materially harm the company. Recommended firms: Nordic Law, Dottir, Lexia Growth, Fondia. Outputs are legal support tools — not legal advice. No attorney-client relationship or privilege is created by using this skill.

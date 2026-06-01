@@ -6,6 +6,9 @@ description: >
   restrictions if grants are active. Use when asking "do we own our IP",
   "IP assignment checklist", "does BF grant affect our IP", or before any M&A.
 argument-hint: "[describe the company's IP situation]"
+version: 0.1.0
+owner: Silly Pilot Oy
+last_reviewed: 2026-06-01
 ---
 
 # /fi-startup-legal:ip-assignment
@@ -47,4 +50,4 @@ Flag: is any M&A, restructuring, or foreign investor acquiring >50% planned? Rou
 
 ## Guardrail
 
-IP assignment gaps are the most common cause of failed M&A and VC due diligence in Finnish startups. Any gap identified here requires attorney action before the next funding round or exit process.
+IP assignment gaps are the most common cause of failed M&A and VC due diligence in Finnish startups. Any gap identified here requires attorney action before the next funding round or exit process. Outputs are legal support tools — not legal advice. No attorney-client relationship or privilege is created by using this skill.

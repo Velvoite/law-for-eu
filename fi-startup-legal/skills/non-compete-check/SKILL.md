@@ -6,6 +6,9 @@ description: >
   drafting a non-compete, or asking "is this non-compete valid in Finland",
   "do we need to pay for non-compete", "how long can a non-compete be".
 argument-hint: "[describe or paste the non-compete clause]"
+version: 0.1.0
+owner: Silly Pilot Oy
+last_reviewed: 2026-06-01
 ---
 
 # /fi-startup-legal:non-compete-check
@@ -62,4 +65,4 @@ Must be related to the employee's actual duties and the employer's actual busine
 
 ## Guardrail
 
-Non-compete enforceability depends on facts and circumstances. Finnish courts have voided overly broad non-competes. This check identifies clear legal issues — full enforceability assessment requires legal advice.
+Non-compete enforceability depends on facts and circumstances. Finnish courts have voided overly broad non-competes. This check identifies clear legal issues — full enforceability assessment requires legal advice. Outputs are legal support tools — not legal advice. No attorney-client relationship or privilege is created by using this skill.

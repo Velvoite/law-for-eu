@@ -5,6 +5,9 @@ description: >
   funding, grants, and legal setup, then writes the practice profile. Run on
   first install or when your situation changes. Use --redo to re-run.
 argument-hint: "[--redo]"
+version: 0.1.0
+owner: Silly Pilot Oy
+last_reviewed: 2026-06-01
 ---
 
 # /fi-startup-legal:startup-cold-start
@@ -68,3 +71,9 @@ Show summary. Then offer based on stage:
 - Incorporated, no SHA: "Try `/fi-startup-legal:founder-agreement` to set up your co-founder agreement."
 - Post-seed: "Try `/fi-startup-legal:sha-review` to review your shareholders' agreement."
 - Series A: "Try `/fi-startup-legal:term-sheet-review` to review an incoming term sheet."
+
+---
+
+## Disclaimer
+
+This plugin provides legal support, not legal advice. Outputs do not constitute legal advice, create an attorney-client relationship, or confer legal professional privilege. Attorney review is recommended before signing any document or making any filing.

@@ -7,6 +7,9 @@ description: >
   customer, asking "what should our customer contract say", "is this contract
   fair", or reviewing a customer's paper.
 argument-hint: "[describe the deal or paste the contract]"
+version: 0.1.0
+owner: Silly Pilot Oy
+last_reviewed: 2026-06-01
 ---
 
 # /fi-startup-legal:customer-contract
@@ -62,4 +65,4 @@ Finnish law default for Finnish customers. For international customers:
 
 ## Guardrail
 
-Customer contracts are legally binding. This checklist covers key issues for a standard SaaS or service contract. For large enterprise contracts, pilot programs, or regulated sector customers, have a lawyer review before signing.
+Customer contracts are legally binding. This checklist covers key issues for a standard SaaS or service contract. For large enterprise contracts, pilot programs, or regulated sector customers, have a lawyer review before signing. Outputs are legal support tools — not legal advice. No attorney-client relationship or privilege is created by using this skill.

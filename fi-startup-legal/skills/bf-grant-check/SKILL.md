@@ -7,6 +7,9 @@ description: >
   Use when asking "can we sell to a US company", "does this VC deal affect
   our BF grant", "IP clawback risk", or before any major transaction.
 argument-hint: "[describe the planned transaction or situation]"
+version: 0.1.0
+owner: Silly Pilot Oy
+last_reviewed: 2026-06-01
 ---
 
 # /fi-startup-legal:bf-grant-check
@@ -58,4 +61,4 @@ If a planned transaction may trigger these restrictions:
 
 ## Guardrail
 
-This check identifies potential BF grant compliance issues. Business Finland grant terms vary by program and year — always review the specific grant agreement. This is not legal advice; route any material transaction to outside counsel and notify BF proactively.
+This check identifies potential BF grant compliance issues. Business Finland grant terms vary by program and year — always review the specific grant agreement. This is not legal advice; route any material transaction to outside counsel and notify BF proactively. Outputs are legal support tools — not legal advice. No attorney-client relationship or privilege is created by using this skill.

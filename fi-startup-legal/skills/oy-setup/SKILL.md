@@ -7,6 +7,9 @@ description: >
   company or when asking "how do I set up an OY", "incorporation checklist",
   "yhtiöjärjestys template".
 argument-hint: "[company name to check]"
+version: 0.1.0
+owner: Silly Pilot Oy
+last_reviewed: 2026-06-01
 ---
 
 # /fi-startup-legal:oy-setup
@@ -63,4 +66,4 @@ After incorporation: run `/fi-startup-legal:founder-agreement` to set up your co
 
 ## Guardrail
 
-Incorporation involves legal and tax obligations. This checklist covers the standard path. If any founder is outside the EU/EEA, if the company has unusual share structure, or if you're in a regulated sector, consult a lawyer before filing.
+Incorporation involves legal and tax obligations. This checklist covers the standard path. If any founder is outside the EU/EEA, if the company has unusual share structure, or if you're in a regulated sector, consult a lawyer before filing. Outputs are legal support tools — not legal advice. No attorney-client relationship or privilege is created by using this skill.
