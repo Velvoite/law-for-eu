@@ -7,6 +7,9 @@ description: >
   DPIA", "privacy check on X", "is this okay from a privacy perspective",
   or describing a new data processing activity.
 argument-hint: "[describe the processing activity]"
+version: 0.1.0
+owner: Silly Pilot Oy
+last_reviewed: 2026-06-01
 ---
 
 # /eu-legal:privacy-triage
@@ -57,4 +60,4 @@ If entity type from base profile is a regulated financial entity:
 
 ## Guardrail
 
-Triage is not a DPIA. A DPIA verdict here requires running `/eu-legal:pia-generation` before the processing begins. GDPR Art. 35(10) and national law may impose additional requirements beyond this triage.
+Triage is not a DPIA. A DPIA verdict here requires running `/eu-legal:pia-generation` before the processing begins. GDPR Art. 35(10) and national law may impose additional requirements beyond this triage. Outputs are legal support tools — not legal advice. No attorney-client relationship or privilege is created by using this skill.

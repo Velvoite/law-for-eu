@@ -9,6 +9,9 @@ description: >
   the AI Act", "AI Act risk assessment", "do we need a FRIA", or describing
   an AI system.
 argument-hint: "[describe the AI system and its use case]"
+version: 0.1.0
+owner: Silly Pilot Oy
+last_reviewed: 2026-06-01
 ---
 
 # /eu-legal:ai-act-compliance
@@ -141,4 +144,4 @@ Recommendation: "Run `/eu-legal:pia-generation` for the DPIA component — the t
 
 ## Guardrail
 
-This classification is preliminary. High-risk determination under Annex III requires legal review — the criteria involve interpretation and the Commission is issuing guidance. Conformity assessments for certain high-risk AI systems require notified body involvement. This output is a working document for attorney review and should not be used as a compliance certification.
+This classification is preliminary. High-risk determination under Annex III requires legal review — the criteria involve interpretation and the Commission is issuing guidance. Conformity assessments for certain high-risk AI systems require notified body involvement. This output is a working document for attorney review and should not be used as a compliance certification. Outputs are legal support tools — not legal advice. No attorney-client relationship or privilege is created by using this skill.

@@ -9,6 +9,9 @@ description: >
   policy", "write an employee monitoring policy", "whistleblower policy",
   "AI use policy for employees", or "equal treatment policy".
 argument-hint: "[policy type] — e.g. 'remote work policy', 'employee monitoring', 'whistleblower', 'AI use policy', 'equal treatment'"
+version: 0.1.0
+owner: Silly Pilot Oy
+last_reviewed: 2026-06-01
 ---
 
 # /eu-legal:policy-drafting
@@ -420,4 +423,4 @@ After drafting any policy, output this checklist:
 
 ## Guardrail
 
-> **CONFIDENTIAL — INTERNAL LEGAL ANALYSIS — DRAFT FOR ATTORNEY REVIEW.** Employment policies create legal obligations as well as rights. Policies involving employee monitoring, performance assessment, or disciplinary procedures must be reviewed by an employment lawyer and — where required — agreed with the Betriebsrat (Germany) or developed through YT-laki consultation (Finland) before they are communicated to employees. A policy rolled out without required works council consultation may be void and expose the employer to liability. These drafts are starting points, not final documents.
+> **CONFIDENTIAL — INTERNAL LEGAL ANALYSIS — DRAFT FOR ATTORNEY REVIEW.** Employment policies create legal obligations as well as rights. Policies involving employee monitoring, performance assessment, or disciplinary procedures must be reviewed by an employment lawyer and — where required — agreed with the Betriebsrat (Germany) or developed through YT-laki consultation (Finland) before they are communicated to employees. A policy rolled out without required works council consultation may be void and expose the employer to liability. These drafts are starting points, not final documents. Outputs are legal support tools — not legal advice. No attorney-client relationship or privilege is created by using this skill.

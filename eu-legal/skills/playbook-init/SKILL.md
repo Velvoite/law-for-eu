@@ -8,6 +8,9 @@ description: >
   reset my NDA positions". Note: /eu-legal:commercial-cold-start covers this as part
   of full setup.
 argument-hint: "[section to update — e.g. 'liability' | 'governing-law' | 'nda-positions' | 'escalation' | blank for full run]"
+version: 0.1.0
+owner: Silly Pilot Oy
+last_reviewed: 2026-06-01
 ---
 
 # /eu-legal:playbook-init
@@ -123,3 +126,9 @@ Unchanged sections: purchasing-side playbook, escalation matrix
 > - Review a contract: `/eu-legal:contract-review`
 > - Review an NDA: `/eu-legal:nda-review`
 > - Review a vendor agreement: `/eu-legal:vendor-agreement-review`"
+
+---
+
+## Disclaimer
+
+Outputs are legal support tools — not legal advice. No attorney-client relationship or privilege is created by using this skill.

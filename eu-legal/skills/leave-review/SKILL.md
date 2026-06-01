@@ -8,6 +8,9 @@ description: >
   obligation", "can I recall someone from parental leave", or any leave
   entitlement question.
 argument-hint: "[leave type] [jurisdiction] [employee tenure and status] — e.g. 'annual leave Finland 3 years' or 'parental leave Germany'"
+version: 0.1.0
+owner: Silly Pilot Oy
+last_reviewed: 2026-06-01
 ---
 
 # /eu-legal:leave-review
@@ -234,4 +237,4 @@ For each leave type reviewed, output:
 
 ## Guardrail
 
-> **RESEARCH NOTES — NOT LEGAL ADVICE.** Leave entitlements interact with collective agreements, individual contract terms, and Kela/Krankenkasse rules in ways that affect the actual entitlement. This analysis calculates the statutory floor. Verify the applicable TES or Tarifvertrag for enhanced entitlements, and confirm current Kela/Krankenkasse benefit levels before communicating entitlements to employees. [model knowledge — verify current benefit amounts]
+> **RESEARCH NOTES — NOT LEGAL ADVICE.** Leave entitlements interact with collective agreements, individual contract terms, and Kela/Krankenkasse rules in ways that affect the actual entitlement. This analysis calculates the statutory floor. Verify the applicable TES or Tarifvertrag for enhanced entitlements, and confirm current Kela/Krankenkasse benefit levels before communicating entitlements to employees. [model knowledge — verify current benefit amounts] Outputs are legal support tools — not legal advice. No attorney-client relationship or privilege is created by using this skill.

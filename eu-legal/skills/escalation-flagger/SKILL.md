@@ -9,6 +9,9 @@ description: >
   need GC sign-off", "route this for approval", or when another skill finds an issue
   that exceeds the reviewer's authority.
 argument-hint: "[describe the issue, or reference a review memo]"
+version: 0.1.0
+owner: Silly Pilot Oy
+last_reviewed: 2026-06-01
 ---
 
 # /eu-legal:escalation-flagger
@@ -134,3 +137,9 @@ If a term appears that `commercial.md` doesn't address, don't guess the threshol
 - It does not decide between the options. The draft includes a recommendation but the approver decides.
 - It does not send the escalation message — it drafts it. The lawyer sends it after reading.
 - It does not apply US-specific thresholds or triggers. All amounts are in EUR.
+
+---
+
+## Disclaimer
+
+Outputs are legal support tools — not legal advice. No attorney-client relationship or privilege is created by using this skill.

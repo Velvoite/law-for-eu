@@ -5,6 +5,9 @@ description: >
   DPIA triggers, and AI Act posture. Writes ~/.claude/plugins/config/eu-legal/privacy.md.
   Run after cold-start-interview, or when privacy practice settings change.
 argument-hint: "[--redo]"
+version: 0.1.0
+owner: Silly Pilot Oy
+last_reviewed: 2026-06-01
 ---
 
 # /eu-legal:privacy-cold-start
@@ -65,3 +68,9 @@ Ask one topic per message.
 Read `eu-legal/privacy.md` template. Replace all `[PLACEHOLDER]` markers with interview answers. Write to `~/.claude/plugins/config/eu-legal/privacy.md` (create parent dirs).
 
 Show summary. Offer: "Try `/eu-legal:dpa-review` to review an incoming DPA, or `/eu-legal:privacy-triage` to check if a new processing activity needs a DPIA."
+
+---
+
+## Disclaimer
+
+Outputs are legal support tools — not legal advice. No attorney-client relationship or privilege is created by using this skill.

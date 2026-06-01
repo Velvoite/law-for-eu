@@ -8,6 +8,9 @@ description: >
   with the AI Act", "DORA gap analysis", "what do we still need to do for
   [regulation]".
 argument-hint: "[regulation or description] — e.g. 'dora' or 'EU AI Act high-risk'"
+version: 0.1.0
+owner: Silly Pilot Oy
+last_reviewed: 2026-06-01
 ---
 
 # /eu-legal:reg-gap-analysis
@@ -76,4 +79,4 @@ Offer to export the gap table as a markdown file for the compliance team.
 
 ## Guardrail
 
-This analysis identifies gaps based on your answers and the Velvoite corpus (or public regulation text). It is a working document for attorney review — not a legal opinion, not a compliance certification, and not a substitute for advice from a qualified lawyer familiar with your specific circumstances. Regulatory interpretation varies by competent authority and jurisdiction.
+This analysis identifies gaps based on your answers and the Velvoite corpus (or public regulation text). It is a working document for attorney review — not a legal opinion, not a compliance certification, and not a substitute for advice from a qualified lawyer familiar with your specific circumstances. Regulatory interpretation varies by competent authority and jurisdiction. Outputs are legal support tools — not legal advice. No attorney-client relationship or privilege is created by using this skill.

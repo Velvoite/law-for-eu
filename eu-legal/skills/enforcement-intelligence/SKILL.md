@@ -8,6 +8,9 @@ description: >
   trends", "what did BaFin fine payment institutions for", "KHO precedents on
   DORA", "top compliance risks", or similar.
 argument-hint: "[regulation] [jurisdiction] — e.g. 'dora' or 'gdpr fi'"
+version: 0.1.0
+owner: Silly Pilot Oy
+last_reviewed: 2026-06-01
 ---
 
 # /eu-legal:enforcement-intelligence
@@ -96,4 +99,4 @@ In the meantime, the EU enforcement landscape by regulation:
 
 ## Guardrail
 
-Enforcement decisions describe past regulatory action in specific factual contexts. They are not a definitive statement of legal obligation for your organisation. Case law citations are from the Velvoite corpus and should be verified at source before reliance. This output is a working document for attorney review — not a legal opinion.
+Enforcement decisions describe past regulatory action in specific factual contexts. They are not a definitive statement of legal obligation for your organisation. Case law citations are from the Velvoite corpus and should be verified at source before reliance. This output is a working document for attorney review — not a legal opinion. Outputs are legal support tools — not legal advice. No attorney-client relationship or privilege is created by using this skill.

@@ -9,6 +9,9 @@ description: >
   employment", "configure employment", "onboard employment", or runs any
   employment skill with a missing config.
 argument-hint: "[--redo] to force a full re-run"
+version: 0.1.0
+owner: Silly Pilot Oy
+last_reviewed: 2026-06-01
 ---
 
 # /eu-legal:employment-cold-start
@@ -215,4 +218,4 @@ After writing the config, say:
 
 ## Guardrail
 
-> **RESEARCH NOTES — NOT LEGAL ADVICE.** The employment profile captures your current situation as described. Employment law has significant liability exposure — statutory obligations, collective agreement requirements, and threshold-triggered duties change as headcount and circumstances change. Review this profile with qualified employment counsel and update it whenever your employment situation materially changes. The profile drives the analysis in all other employment skills; attorney review is required before relying on any output for employment decisions.
+> **RESEARCH NOTES — NOT LEGAL ADVICE.** The employment profile captures your current situation as described. Employment law has significant liability exposure — statutory obligations, collective agreement requirements, and threshold-triggered duties change as headcount and circumstances change. Review this profile with qualified employment counsel and update it whenever your employment situation materially changes. The profile drives the analysis in all other employment skills; attorney review is required before relying on any output for employment decisions. Outputs are legal support tools — not legal advice. No attorney-client relationship or privilege is created by using this skill.

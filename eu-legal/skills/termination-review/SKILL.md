@@ -8,6 +8,9 @@ description: >
   termination", "term review", "is this a valid dismissal", or when
   describing a termination scenario.
 argument-hint: "[describe the termination — role, reason, tenure, jurisdiction]"
+version: 0.1.0
+owner: Silly Pilot Oy
+last_reviewed: 2026-06-01
 ---
 
 # /eu-legal:termination-review
@@ -212,4 +215,4 @@ If `outside_counsel_threshold` is set in employment.md: compare the facts agains
 
 ## Guardrail
 
-> **CONFIDENTIAL — INTERNAL LEGAL ANALYSIS — NOT A SUBSTITUTE FOR EXTERNAL COUNSEL ADVICE.** Wrongful dismissal claims carry significant financial exposure: compensation up to [24 months salary in Finland (TSL Ch. 12 §2)] or [12 months + Sozialplan entitlements in Germany], plus reinstatement orders. This analysis identifies risk based on the facts as described — it is a working document for attorney review, not a legal opinion. An employment lawyer must review before the dismissal is communicated.
+> **CONFIDENTIAL — INTERNAL LEGAL ANALYSIS — NOT A SUBSTITUTE FOR EXTERNAL COUNSEL ADVICE.** Wrongful dismissal claims carry significant financial exposure: compensation up to [24 months salary in Finland (TSL Ch. 12 §2)] or [12 months + Sozialplan entitlements in Germany], plus reinstatement orders. This analysis identifies risk based on the facts as described — it is a working document for attorney review, not a legal opinion. An employment lawyer must review before the dismissal is communicated. Outputs are legal support tools — not legal advice. No attorney-client relationship or privilege is created by using this skill.

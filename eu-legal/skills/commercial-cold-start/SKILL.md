@@ -9,6 +9,9 @@ description: >
   playbook positions, or before running contract-review, nda-review, or
   vendor-agreement-review for the first time.
 argument-hint: "[--redo] [--check-integrations]"
+version: 0.1.0
+owner: Silly Pilot Oy
+last_reviewed: 2026-06-01
 ---
 
 # /eu-legal:commercial-cold-start
@@ -260,3 +263,9 @@ After writing `commercial.md`, show a one-paragraph summary of what was configur
 > 2. **Review an NDA** — run `/eu-legal:nda-review`
 > 3. **Review a vendor agreement** — run `/eu-legal:vendor-agreement-review`
 > 4. **Update a specific playbook section** — run `/eu-legal:playbook-init`"
+
+---
+
+## Disclaimer
+
+Outputs are legal support tools — not legal advice. No attorney-client relationship or privilege is created by using this skill.

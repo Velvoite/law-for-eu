@@ -10,6 +10,9 @@ description: >
   (Reg 883/2004). Use when asked "we want to hire in [country]", "expanding to
   [country]", "posted worker rules", "what do we need to know to hire in [X]".
 argument-hint: "[target country] — e.g. 'Netherlands' or 'Estonia' or 'posted worker Finland to Germany'"
+version: 0.1.0
+owner: Silly Pilot Oy
+last_reviewed: 2026-06-01
 ---
 
 # /eu-legal:international-expansion
@@ -266,4 +269,4 @@ Generate the following checklist for outside counsel briefing:
 
 ## Guardrail
 
-> **RESEARCH NOTES — NOT LEGAL ADVICE.** Employment law requirements in each EU member state vary significantly from the general principles described here. This checklist identifies key legal checkpoints — it does not substitute for advice from a qualified employment lawyer in the target country. Before the first hire: engage local counsel, confirm current minimum wage and benefit rates, and verify that the applicable collective agreement has been identified. [model knowledge — verify current thresholds and benefit amounts for each country]
+> **RESEARCH NOTES — NOT LEGAL ADVICE.** Employment law requirements in each EU member state vary significantly from the general principles described here. This checklist identifies key legal checkpoints — it does not substitute for advice from a qualified employment lawyer in the target country. Before the first hire: engage local counsel, confirm current minimum wage and benefit rates, and verify that the applicable collective agreement has been identified. [model knowledge — verify current thresholds and benefit amounts for each country] Outputs are legal support tools — not legal advice. No attorney-client relationship or privilege is created by using this skill.

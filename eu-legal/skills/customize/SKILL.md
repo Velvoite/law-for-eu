@@ -7,6 +7,9 @@ description: >
   Use when the user says "change my entity type", "update my jurisdiction",
   "add a practice area", "update my profile", or similar.
 argument-hint: "[section name, or describe what you want to change]"
+version: 0.1.0
+owner: Silly Pilot Oy
+last_reviewed: 2026-06-01
 ---
 
 # /eu-legal:customize
@@ -58,3 +61,9 @@ Profile editing works entirely locally — you can update entity type, jurisdict
 The only feature unavailable without `VELVOITE_API_KEY` is the actor-role re-import (which auto-fills your regulation roles from your Velvoite workspace). You can still edit actor roles manually in the profile — they are plain text fields in the actor roles table.
 
 To enable re-import: add `VELVOITE_API_KEY` to your `.envrc` and run `direnv allow`, then re-run `/eu-legal:customize` for actor role changes.
+
+---
+
+## Disclaimer
+
+Outputs are legal support tools — not legal advice. No attorney-client relationship or privilege is created by using this skill.

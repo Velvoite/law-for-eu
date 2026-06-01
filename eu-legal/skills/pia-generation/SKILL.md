@@ -7,6 +7,9 @@ description: >
   saying "write a PIA", "DPIA for this feature", "privacy review this", or
   describing a new data processing activity.
 argument-hint: "[describe the processing activity or system]"
+version: 0.1.0
+owner: Silly Pilot Oy
+last_reviewed: 2026-06-01
 ---
 
 # /eu-legal:pia-generation
@@ -78,4 +81,4 @@ Structure (based on EDPB Guidelines 04/2022 on DPIA (based on WP29 WP248 rev.01)
 
 ## Guardrail
 
-This draft requires review by the DPO (if appointed) and legal counsel before finalisation. If the residual risk is assessed as high, prior consultation with the supervisory authority is mandatory under GDPR Art. 36 — do not proceed with the processing without completing that consultation.
+This draft requires review by the DPO (if appointed) and legal counsel before finalisation. If the residual risk is assessed as high, prior consultation with the supervisory authority is mandatory under GDPR Art. 36 — do not proceed with the processing without completing that consultation. Outputs are legal support tools — not legal advice. No attorney-client relationship or privilege is created by using this skill.

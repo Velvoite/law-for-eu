@@ -8,6 +8,9 @@ description: >
   says "review this NDA", "check this confidentiality agreement", "is this NDA
   okay", or attaches an inbound NDA.
 argument-hint: "[file path | Drive link | paste text]"
+version: 0.1.0
+owner: Silly Pilot Oy
+last_reviewed: 2026-06-01
 ---
 
 # /eu-legal:nda-review
@@ -205,3 +208,9 @@ CONFIDENTIAL — INTERNAL LEGAL ANALYSIS — DRAFT FOR ATTORNEY REVIEW
 > 3. **Redline and return** — I'll produce specific redline language for each flagged item
 > 4. **Use our paper instead** — recommend if counterparty is a startup or small vendor
 > 5. **Something else**
+
+---
+
+## Disclaimer
+
+Outputs are legal support tools — not legal advice. No attorney-client relationship or privilege is created by using this skill.

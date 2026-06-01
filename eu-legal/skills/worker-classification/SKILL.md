@@ -7,6 +7,9 @@ description: >
   person an employee or contractor?", "can we use a freelancer for this?",
   "contractor classification risk", or "platform worker classification".
 argument-hint: "[describe the working arrangement or paste the contract]"
+version: 0.1.0
+owner: Silly Pilot Oy
+last_reviewed: 2026-06-01
 ---
 
 # /eu-legal:worker-classification
@@ -139,4 +142,4 @@ Based on risk level:
 
 ## Guardrail
 
-> **RESEARCH NOTES — NOT LEGAL ADVICE.** Worker classification has significant tax, social security, and employment law consequences. This analysis applies legal tests to the facts as described — it is a working document for attorney review, not a classification opinion. A qualified employment lawyer in the relevant jurisdiction must review before you rely on contractor status or convert an existing arrangement. Misclassification can result in back payments of social contributions, income tax liability, and retroactive employment rights.
+> **RESEARCH NOTES — NOT LEGAL ADVICE.** Worker classification has significant tax, social security, and employment law consequences. This analysis applies legal tests to the facts as described — it is a working document for attorney review, not a classification opinion. A qualified employment lawyer in the relevant jurisdiction must review before you rely on contractor status or convert an existing arrangement. Misclassification can result in back payments of social contributions, income tax liability, and retroactive employment rights. Outputs are legal support tools — not legal advice. No attorney-client relationship or privilege is created by using this skill.

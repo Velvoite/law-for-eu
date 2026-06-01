@@ -7,6 +7,9 @@ description: >
   your company profile changes. Use --redo to force a re-run, or
   --check-integrations to re-probe Velvoite, Slack, and Drive only.
 argument-hint: "[--redo] [--check-integrations]"
+version: 0.1.0
+owner: Silly Pilot Oy
+last_reviewed: 2026-06-01
 ---
 
 # /eu-legal:cold-start-interview
@@ -177,3 +180,9 @@ Then offer:
 > - `/eu-legal:obligations` — what regulatory obligations apply to you
 > - `/eu-legal:deadlines` — upcoming compliance dates in the next 90 days
 > - `/eu-legal:reg-watch` — what changed in EU regulation this week"
+
+---
+
+## Disclaimer
+
+Outputs are legal support tools — not legal advice. No attorney-client relationship or privilege is created by using this skill.

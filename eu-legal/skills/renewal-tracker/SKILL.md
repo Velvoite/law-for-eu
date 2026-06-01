@@ -9,6 +9,9 @@ description: >
   user asks "what's renewing soon", "what renewals are due", "did we miss a
   cancellation window", "add this to the renewal tracker", or on a scheduled basis.
 argument-hint: "[--days N | --missed | --add]"
+version: 0.1.0
+owner: Silly Pilot Oy
+last_reviewed: 2026-06-01
 ---
 
 # /eu-legal:renewal-tracker
@@ -181,3 +184,9 @@ Do not proceed past this gate without an explicit yes.
 - It does not decide whether to renew. It surfaces the deadline and the business owner.
 - It does not read contracts to find renewal dates — that happens at review time via `contract-review` or `vendor-agreement-review`. If a contract is in the register without a computed cancel-by date, flag it as incomplete and ask the user to fill in the gap.
 - It does not use Velvoite or require `VELVOITE_API_KEY`.
+
+---
+
+## Disclaimer
+
+Outputs are legal support tools — not legal advice. No attorney-client relationship or privilege is created by using this skill.

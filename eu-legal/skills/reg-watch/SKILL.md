@@ -7,6 +7,9 @@ description: >
   updates this week", "what changed in EU reg", "weekly regulatory digest",
   or similar.
 argument-hint: "[days] — e.g. '14' for two weeks"
+version: 0.1.0
+owner: Silly Pilot Oy
+last_reviewed: 2026-06-01
 ---
 
 # /eu-legal:reg-watch
@@ -51,3 +54,9 @@ In the meantime, check directly:
 - EIOPA: eiopa.europa.eu/publications
 - FIN-FSA: finanssivalvonta.fi/en/news
 - BaFin: bafin.de/SharedDocs/Veroeffentlichungen/EN"
+
+---
+
+## Disclaimer
+
+Outputs are legal support tools — not legal advice. No attorney-client relationship or privilege is created by using this skill.

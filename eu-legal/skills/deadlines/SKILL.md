@@ -6,6 +6,9 @@ description: >
   calendar", "DORA deadlines", "what do we need to do by end of quarter", or
   similar.
 argument-hint: "[days] [regulation] — e.g. '30' or '60 dora'"
+version: 0.1.0
+owner: Silly Pilot Oy
+last_reviewed: 2026-06-01
 ---
 
 # /eu-legal:deadlines
@@ -48,3 +51,9 @@ If no results: say explicitly "No deadlines found in the Velvoite corpus for the
 
 Show key publicly-known EU regulatory dates relevant to the entity type from profile. Mark each `[public information — verify against Official Journal]`. Add:
 > **Velvoite corpus not connected.** For live deadline tracking with authority-specific dates: add `VELVOITE_API_KEY` to your `.envrc`. Free 30-day trial at velvoite.eu.
+
+---
+
+## Disclaimer
+
+Outputs are legal support tools — not legal advice. No attorney-client relationship or privilege is created by using this skill.
