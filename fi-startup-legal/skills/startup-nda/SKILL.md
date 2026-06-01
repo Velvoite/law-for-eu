@@ -3,10 +3,9 @@ name: startup-nda
 description: >
   NDA review and generation for Finnish startups — three scenarios (investor,
   partner/integration, M&A due diligence), mutual vs one-way, EU Trade Secrets
-  Directive (Liikesalaisuuslaki 595/2018) framing, Business Finland IP
-  adaptations, AI product definition expansions. Use when reviewing or drafting
-  an NDA, asking "is this NDA okay", "NDA with investor", "NDA with partner",
-  "M&A NDA".
+  Directive (Liikesalaisuuslaki 595/2018) framing, AI product definition
+  expansions. Use when reviewing or drafting an NDA, asking "is this NDA okay",
+  "NDA with investor", "NDA with partner", "M&A NDA".
 argument-hint: "[paste NDA text or describe: who is the counterparty and what is the purpose?]"
 ---
 
@@ -16,7 +15,7 @@ argument-hint: "[paste NDA text or describe: who is the counterparty and what is
 2. Call `mcp__velvoite__get_finnish_statute("LSL", "2")` — fetch live trade secret definition.
 3. Detect scenario from user input (see table below). Confirm before proceeding.
 4. Detect mode: **draft** (user wants an NDA generated) or **review** (user has an NDA to check).
-5. Apply profile adaptations (BF grant clause, AI definition expansion) if flags are set.
+5. Apply profile adaptations (AI definition expansion, BF advisory note) if flags are set.
 6. Execute: draft from scaffold OR review against checklist.
 
 ---
@@ -38,34 +37,16 @@ Confirm detected scenario before drafting or reviewing. Example: *"This looks li
 
 Apply when the relevant flag is set in the loaded profile.
 
-### BF grant clause (if `bf_grants_active: yes`)
+### BF grant advisory (if `bf_grants_active: yes`)
 
-Business Finland grants come with a 5-year restriction: if the company receives
-BF funding, it cannot transfer control of the funded IP outside the EEA for
-5 years without BF approval, and may face clawback. The NDA clause signals this
-restriction to the counterparty so they know disclosed IP is not freely transferable.
+BF grant restrictions govern **IP transfer**, not confidentiality — they do not
+belong as a clause in the NDA. Instead, surface this note in your output:
 
-**Scenario A (Investor):** Add as a numbered clause —
-
-> "Disclosure of materials does not transfer any rights to Business Finland-funded
-> IP. Recipient acknowledges that certain IP may be subject to Business Finland
-> grant restrictions on transfer and commercial exploitation."
-
-**Scenario B (Partner):** Add as a numbered clause —
-
-> "Disclosure of materials does not transfer any rights to Business Finland-funded
-> IP. Recipient acknowledges BF grant restrictions on IP transfer and commercial
-> exploitation apply independently of this Agreement. Recipient shall not file
-> patent applications or register IP rights based on disclosed Confidential
-> Information."
-
-**Scenario C (M&A):** Add as a numbered clause —
-
-> "Disclosing Party discloses that certain IP assets are subject to Business Finland
-> grant restrictions on transfer. Receiving Party acknowledges that any transaction
-> involving such IP assets requires prior Business Finland approval and may be
-> subject to clawback provisions. This disclosure is made for evaluation purposes
-> only and does not constitute a waiver of those restrictions."
+> **Business Finland grant active:** BF grant IP restrictions are a separate
+> matter from this NDA. Disclose them in the relevant commercial agreement
+> (partnership agreement, SPA, or due diligence disclosure letter). Run
+> `/fi-startup-legal:bf-grant-check` before signing any transaction involving
+> BF-funded IP.
 
 ### AI product definition expansion (if `ai_product: yes`)
 
@@ -105,8 +86,8 @@ strategy — rare.
 ### Draft scaffold
 
 When drafting, generate a complete agreement using this structure. Replace all
-`[BRACKETED]` items with actual values from context. Apply AI expansion and BF
-clause if profile flags are set.
+`[BRACKETED]` items with actual values from context. Apply AI expansion if
+`ai_product: yes`.
 
 ```
 NON-DISCLOSURE AGREEMENT
@@ -141,8 +122,6 @@ NON-DISCLOSURE AGREEMENT
    Disclosing Party is entitled to seek injunctive relief (LSL §8) and damages
    including unjust enrichment (LSL §11) for any breach.
 
-[BF GRANT CLAUSE IF bf_grants_active: yes]
-
 Signed: _________________ Date: _____________
 ```
 
@@ -172,8 +151,8 @@ co-development. Both parties share material.
 ### Draft scaffold
 
 When drafting, generate a complete agreement using this structure. Replace all
-`[BRACKETED]` items with actual values from context. Apply AI expansion and BF
-clause if profile flags are set.
+`[BRACKETED]` items with actual values from context. Apply AI expansion if
+`ai_product: yes`.
 
 ```
 MUTUAL NON-DISCLOSURE AGREEMENT
@@ -223,8 +202,6 @@ MUTUAL NON-DISCLOSURE AGREEMENT
    Each Party is entitled to seek injunctive relief (LSL §8) and damages
    including unjust enrichment (LSL §11) for breach.
 
-[BF GRANT CLAUSE IF bf_grants_active: yes]
-
 Signed: _________________ Date: _____________
 ```
 
@@ -257,8 +234,8 @@ requiring full data room access.
 ### Draft scaffold
 
 When drafting, generate a complete agreement using this structure. Replace all
-`[BRACKETED]` items with actual values from context. Apply AI expansion and BF
-clause if profile flags are set.
+`[BRACKETED]` items with actual values from context. Apply AI expansion if
+`ai_product: yes`.
 
 ```
 NON-DISCLOSURE AND STANDSTILL AGREEMENT
@@ -310,8 +287,6 @@ NON-DISCLOSURE AND STANDSTILL AGREEMENT
    Target is entitled to seek immediate injunctive relief without bond (LSL §8)
    and full damages including unjust enrichment (LSL §11). Recipient acknowledges
    that breach would cause irreparable harm for which monetary damages are inadequate.
-
-[BF GRANT CLAUSE IF bf_grants_active: yes]
 
 Signed: _________________ Date: _____________
 ```
