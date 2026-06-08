@@ -142,6 +142,7 @@ EU data protection note: if confidential information includes personal data, ret
 Compare to `commercial.md` governing law preference.
 - If EU governing law: note the applicable national TSD implementation.
 - If Finnish law: Call `mcp__velvoite__get_finnish_statute("LSL", "2")` for the current Finnish trade secret definition. Present the three-element definition from the live statute text. "Liikesalaisuuslaki (Business Secrets Act 595/2018) implements Directive 2016/943 in Finland. Art. 4 of the Act defines trade secrets; §§ 4–7 define unlawful acquisition, use, and disclosure. `[model knowledge — verify]`"
+  Then call `mcp__velvoite__search_cjeu_cases("trade secret", "Directive 2016/943")` to surface any CJEU judgments interpreting the Trade Secrets Directive. Fetch the URL for any relevant case. If found, note: "CJEU [celex]: [one-line holding on what the court required]." If none found, omit.
 - If German law: "GeschGehG (Gesetz zum Schutz von Geschäftsgeheimnissen, 2019) implements Directive 2016/943 in Germany. `[model knowledge — verify]`"
 - If outside EU: 🟠 flag. "Governing law is [jurisdiction]. Your playbook prefers EU law. TSD protections may not apply. `[review]`"
 

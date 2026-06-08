@@ -45,7 +45,7 @@ Most financial institutions are **deployers** for third-party AI (fraud detectio
 
 ## Step 2: Risk classification
 
-**Live verification:** Before classifying, call `mcp__velvoite__get_eu_regulation_article("ai_act", "6")` for Annex references and `mcp__velvoite__get_eu_regulation_article("ai_act", "5")` for prohibited practices. Fetch the returned URLs to verify the classification criteria against the current EUR-Lex text. The AI Act application dates and Annex III categories are particularly important to verify against live text.
+**Live verification:** Before classifying, call `mcp__velvoite__get_eu_regulation_article("ai_act", "6")` for Annex references and `mcp__velvoite__get_eu_regulation_article("ai_act", "5")` for prohibited practices. Fetch the returned URLs to verify the classification criteria against the current EUR-Lex text. The AI Act application dates and Annex III categories are particularly important to verify against live text. If either call fails to return a section URL, fall back to `mcp__velvoite__get_eurlex_document("32024R1689")` to retrieve the full AI Act document URL and fetch the text directly.
 
 ### Prohibited (Art. 5) — hard stop
 

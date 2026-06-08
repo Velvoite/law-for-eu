@@ -60,7 +60,10 @@ For each of the top 3 violation areas:
 
 2. **What the authority expected** — extract the positive obligation from the decision: "The authority found that [entity type] must maintain X, test it Y-frequently, and document Z."
 
-3. **Case law layer** — if jurisdiction is `fi` or `de`, call `mcp__velvoite__search_regulations` with a query combining the violation topic + jurisdiction (e.g. "ICT incident reporting DORA Finland KHO" or "Meldepflicht BaFin Zahlungsinstitut"). Surface any KHO or German administrative court decisions that have interpreted this obligation. If found, note: "KHO [case number / year]: [one-line holding]."
+3. **Case law layer:**
+   - **EU level (all jurisdictions):** Call `mcp__velvoite__search_cjeu_cases` with the violation topic as query (e.g. `"payment institution authorisation"`, `"data protection supervisory authority"`, `"ICT incident reporting"`). Fetch the URL for any directly relevant judgment. Surface as: "CJEU [celex]: [one-line holding]."
+   - **Finnish level:** If jurisdiction includes `fi`, call `mcp__velvoite__search_kho_decisions` for the current and prior year to get the listing URL, then fetch it to identify relevant decisions by title. Call `mcp__velvoite__get_kho_decision(year, number)` for each relevant case and fetch its URL. Surface as: "KHO:[year]:[number]: [one-line holding]."
+   - **German level:** If jurisdiction includes `de`, use `mcp__velvoite__search_cjeu_cases` with a German-context query to surface any CJEU cases that German courts have applied to this obligation type. Note: BVerwG/VG decisions are not available via MCP — reference by citation if known from corpus results.
 
 4. **What to check in your organisation** — 3 specific questions to ask your compliance team about this violation area.
 

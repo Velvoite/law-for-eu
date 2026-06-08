@@ -28,6 +28,8 @@ last_reviewed: 2026-06-01
 
 Call `mcp__velvoite__get_recent_changes` with `days` from args.
 
+For any item in the results that carries a CELEX number (format: `3YYYYTNNNN`, e.g. `32022R2554`), call `mcp__velvoite__get_eurlex_document(celex)` to resolve the canonical title and date before rendering. Use the returned `url` as the link target. If CELLAR is unavailable, fall back to the URL from the corpus result.
+
 **Before grouping:** Check urgency. Any item with urgency level 1 or 2 in the corpus results must be surfaced first as a banner:
 
 > 🔴 **CRITICAL — Requires immediate attention:**
