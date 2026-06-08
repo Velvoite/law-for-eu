@@ -13,7 +13,7 @@ last_reviewed: 2026-06-01
 # /fi-startup-legal:board-minutes
 
 1. Load profile.
-2. Call `mcp__velvoite__get_finnish_statute("OYL", "6")` — board rules, quorum, decision-making. If unavailable: apply the OYL Chapter 6 rules below as fallback and note `[OYL §6 not fetched live — verify at finlex.fi]`.
+2. Call `mcp__velvoite__get_finnish_statute("OYL", "6")` — board rules, quorum, decision-making. If the response contains `document_id`, call `mcp__velvoite__get_document(document_id)` for full OYL text. If `document_id` is absent, apply the OYL Chapter 6 rules below as fallback and note `[OYL §6 not fetched live — verify at finlex.fi]`. Do not WebFetch finlex.fi URLs.
 3. **Input gate:** Before drafting, confirm the user has provided: (a) meeting date and location, (b) names of attendees and quorum count, (c) the chair's name, and (d) each decision that was made. If any are missing, ask before proceeding — do not draft minutes from partial input.
 4. **Decision-type check:** For each stated agenda item, verify it falls within board authority (see Decision types below). If any item appears to require AGM approval (share issuance, option scheme, changes to yhtiöjärjestys, auditor, dividend, merger/demerger), halt and flag: "This decision may require an AGM resolution — do not draft board minutes for it until authority is confirmed with counsel."
 5. Draft minutes from the confirmed input. Draft for attorney review before signing.

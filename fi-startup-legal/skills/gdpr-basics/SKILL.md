@@ -33,7 +33,7 @@ last_reviewed: 2026-06-01
 ### Do you need to comply?
 Yes, if you: (a) are established in the EU, or (b) offer goods/services to EU individuals, or (c) monitor EU individuals. Finnish startups: always yes.
 
-**Live verification:** Call `mcp__velvoite__get_eu_regulation_article("gdpr", "13")` for privacy notice requirements and `mcp__velvoite__get_eu_regulation_article("gdpr", "28")` for processor DPA requirements. Fetch the returned section_url values to verify the requirement lists below against current EUR-Lex text.
+**Live verification:** Call `mcp__velvoite__get_eu_regulation_article("gdpr", "13")` and `mcp__velvoite__get_eu_regulation_article("gdpr", "28")`. If `corpus_obligations > 0`, read `obligations[].source_text` for verbatim GDPR text. If `corpus_obligations: 0`, apply the requirements below as model knowledge tagged `[GDPR Art. 13/28 — model knowledge — verify at EUR-Lex CELEX:32016R0679]`. EUR-Lex blocks WebFetch — do not fetch section_url.
 
 ### Privacy notice (tietosuojaseloste) — **Mandatory**
 Required by GDPR Art. 13/14 before collecting personal data. Must cover:

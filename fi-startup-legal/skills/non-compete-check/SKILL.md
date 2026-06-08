@@ -18,8 +18,8 @@ last_reviewed: 2026-06-01
    - SHA (shareholders' agreement / osakassopimus) → TSL §3:5 does not apply; governed by contract law. Route to `/fi-startup-legal:sha-review` or commercial counsel.
    - Board member service agreement → TSL does not apply to board members.
    - Consulting/contractor agreement → classification must be confirmed first (TSL only applies to employees); run `/fi-startup-legal:non-compete-check` only after confirming employment status.
-2. Call `mcp__velvoite__get_finnish_statute("TSL", "3:5")` — fetch current non-compete statute text.
-3. Call `mcp__velvoite__search_kho_decisions` for the current and two prior years. Fetch each listing URL and identify any decisions whose title relates to non-compete clauses (kilpailukielto), employment restrictions, or TSL §3. Call `mcp__velvoite__get_kho_decision(year, number)` for each relevant case and fetch the full text URL. Surface relevant precedents in the validation output as: "> KHO:[year]:[number]: [one-line holding on what the court required or invalidated]." If none found, omit.
+2. Call `mcp__velvoite__get_finnish_statute("TSL", "3:5")` — if response has `document_id`, call `mcp__velvoite__get_document(document_id)` for text. Do not WebFetch finlex.fi.
+3. Call `mcp__velvoite__search_kho_decisions` for the current and two prior years. Fetch each listing URL and identify any decisions whose title relates to non-compete clauses (kilpailukielto), employment restrictions, or TSL §3. Call `mcp__velvoite__get_kho_decision(year, number)` for each relevant case. web_search the returned `search_query`, then fetch the kho.fi URL from results. Surface relevant precedents in the validation output as: "> KHO:[year]:[number]: [one-line holding on what the court required or invalidated]." If none found, omit.
 4. Validate against the live statute. Flag any issues.
 
 ---

@@ -45,7 +45,7 @@ Most financial institutions are **deployers** for third-party AI (fraud detectio
 
 ## Step 2: Risk classification
 
-**Live verification:** Before classifying, call `mcp__velvoite__get_eu_regulation_article("ai_act", "6")` for Annex references and `mcp__velvoite__get_eu_regulation_article("ai_act", "5")` for prohibited practices. Fetch the returned URLs to verify the classification criteria against the current EUR-Lex text. The AI Act application dates and Annex III categories are particularly important to verify against live text. If either call fails to return a section URL, fall back to `mcp__velvoite__get_eurlex_document("32024R1689")` to retrieve the full AI Act document URL and fetch the text directly.
+**Live verification:** Call `mcp__velvoite__get_eu_regulation_article("ai_act", "6")` and `mcp__velvoite__get_eu_regulation_article("ai_act", "5")`. If `corpus_obligations > 0`, read `obligations[].source_text` — verbatim AI Act text from the Velvoite corpus. If `corpus_obligations: 0` (AI Act not yet indexed), apply the classification criteria below as model knowledge and note `[AI Act Art. 5/6 — model knowledge — verify at EUR-Lex CELEX:32024R1689]`. Do not attempt to fetch section_url or eurlex_url.
 
 ### Prohibited (Art. 5) — hard stop
 
@@ -61,7 +61,7 @@ These are prohibited regardless of use case. Check:
 
 If any prohibited practice applies: **STOP. This system cannot be deployed. Route to legal immediately.**
 
-**Verify prohibited practices against live text:** Call `mcp__velvoite__get_eu_regulation_article("ai_act", "5")` and fetch the section_url to confirm the current prohibited practice list. The AI Act prohibited practices have been amended — live text takes precedence.
+**Verify prohibited practices:** Call `mcp__velvoite__get_eu_regulation_article("ai_act", "5")` and read `obligations[].source_text` if `corpus_obligations > 0`. If 0, use the list above as model knowledge tagged `[model knowledge — verify at EUR-Lex CELEX:32024R1689#art_5]`.
 
 ### High-risk (Art. 6 + Annexes II and III)
 

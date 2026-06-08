@@ -15,8 +15,8 @@ last_reviewed: 2026-06-01
 # /fi-startup-legal:esop-designer
 
 1. Load profile. If placeholders, stop.
-2. Call `mcp__velvoite__get_finnish_statute("TVL", "66")` — fetch live TVL §66 text.
-3. Call `mcp__velvoite__get_finnish_statute("TVL", "66a")` — fetch live TVL §66a text.
+2. Call `mcp__velvoite__get_finnish_statute("TVL", "66")` — if response has `document_id`, call `mcp__velvoite__get_document(document_id)` for text.
+3. Call `mcp__velvoite__get_finnish_statute("TVL", "66a")` — if response has `document_id`, call `mcp__velvoite__get_document(document_id)` for text.
 4. Call `mcp__velvoite__get_finnish_statute("OYL", "10")` — AGM approval requirements for option schemes.
 5. Call `mcp__velvoite__search_kho_decisions` for the current and two prior years. Fetch each listing URL and identify decisions related to stock options, option taxation, TVL §66, or startup equity. Call `mcp__velvoite__get_kho_decision(year, number)` for each relevant case. Surface any precedents that affect the §66 vs §66a analysis or option scheme validity. If none found, omit.
 6. Run the §66 vs §66a decision workflow below. Output is advisory — tax advice requires a qualified tax advisor.

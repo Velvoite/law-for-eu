@@ -17,7 +17,7 @@ last_reviewed: 2026-06-01
 1.5. **Sector/TES gate:** If the company sector is unknown or not set in the profile, ask before running the checklist — TES (collective agreement) applicability depends on sector and cannot be assessed without it. If a sector-specific TES applies, note which TES and flag that its terms may override TSL defaults on notice periods, trial period, and compensation.
 2. Call `mcp__velvoite__get_finnish_statute("TSL", "1:4")` — mandatory employment contract terms.
 3. Call `mcp__velvoite__get_finnish_statute("TSL", "3:5")` — non-compete rules.
-4. Call `mcp__velvoite__get_finnish_statute("TSL", "6:3")` — employee notice periods (live). Call `mcp__velvoite__get_finnish_statute("TSL", "6:4")` — employer notice periods (live). Derive notice period rules from the fetched text. If MCP unavailable: note `[TSL §6:3/§6:4 not fetched live — verify notice periods at finlex.fi before use]` and use the fallback table below.
+4. Call `mcp__velvoite__get_finnish_statute("TSL", "6:3")` and `("TSL", "6:4")` — notice periods. For each: if response has `document_id`, call `mcp__velvoite__get_document(document_id)` for full text. If `document_id` absent, note `[TSL notice periods not fetched live]` and use the fallback table below. Do not WebFetch finlex.fi URLs.
 5. Run checklist. Draft for attorney review.
 
 ---

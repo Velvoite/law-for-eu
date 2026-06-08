@@ -26,7 +26,7 @@ DPAs come in two flavors. When a customer sends theirs, we're defending operatio
 
 ## Step 1: Mandatory GDPR Art. 28 clause check
 
-**Live verification:** Call `mcp__velvoite__get_eu_regulation_article("gdpr", "28")` and fetch the returned `section_url` to read GDPR Art. 28 from EUR-Lex directly. Verify that the mandatory clause list below matches the live text. If it differs, the live text takes precedence.
+**Live verification:** Call `mcp__velvoite__get_eu_regulation_article("gdpr", "28")`. If `corpus_obligations > 0`, read `obligations[].source_text` for verbatim GDPR Art. 28 text. If `corpus_obligations: 0`, apply the mandatory clause list below as model knowledge tagged `[GDPR Art. 28 — model knowledge — verify at EUR-Lex CELEX:32016R0679]`. EUR-Lex blocks WebFetch — do not fetch section_url.
 
 Every DPA must contain (Art. 28(3)). Check each:
 

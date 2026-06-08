@@ -23,7 +23,7 @@ last_reviewed: 2026-06-01
 
 ## Step 1: Mandatory DPIA trigger check (GDPR Art. 35)
 
-**Live verification:** Call `mcp__velvoite__get_eu_regulation_article("gdpr", "35")` and fetch the section_url to verify the current Art. 35 mandatory DPIA triggers from EUR-Lex before applying the 9-criterion checklist below.
+**Live verification:** Call `mcp__velvoite__get_eu_regulation_article("gdpr", "35")`. If `corpus_obligations > 0`, read `obligations[].source_text` for verbatim DPIA trigger criteria. If `corpus_obligations: 0`, apply the 9-criterion checklist below as model knowledge tagged `[GDPR Art. 35 — model knowledge — verify at EUR-Lex CELEX:32016R0679]`. EUR-Lex blocks WebFetch — do not fetch section_url.
 
 A DPIA is mandatory if the processing is "likely to result in a high risk." Check:
 

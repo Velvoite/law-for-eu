@@ -15,7 +15,7 @@ last_reviewed: 2026-06-01
 # /fi-startup-legal:startup-nda
 
 1. Load `~/.claude/plugins/config/fi-startup-legal/CLAUDE.md`. Extract: `bf_grants_active`, `ai_product`, `stage`. If placeholders, stop: run `/fi-startup-legal:startup-cold-start` first.
-2. Call `mcp__velvoite__get_finnish_statute("LSL", "2")` — fetch live trade secret definition. If unavailable: note `[LSL §2 definition not fetched — verify current text at finlex.fi]` and proceed.
+2. Call `mcp__velvoite__get_finnish_statute("LSL", "2")` — if response has `document_id`, call `mcp__velvoite__get_document(document_id)` for text. If absent, note `[LSL §2 not in corpus]`. Do not WebFetch finlex.fi.
 3. Detect scenario from user input (see table below). Confirm before proceeding.
 4. Detect mode: **draft** (user wants an NDA generated) or **review** (user has an NDA to check).
 5. Apply profile adaptations (AI definition expansion, BF advisory note) if flags are set.
